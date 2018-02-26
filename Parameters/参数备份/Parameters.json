@@ -1,0 +1,3932 @@
+{
+"level":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "54",
+        "upper" : "54",
+        "default" : "54",
+        "abstract" : "Mos model level selector, set to 54 for HSPICE model. together with the keyword NMOS or PMOS specified in the model cards",
+        "notice" : ""
+        },
+"version":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "4.5",
+        "upper" : "4.5",
+        "default" : "4.5",
+        "abstract" : "BSIM4 model version number.",
+        "notice" : ""
+        },
+"paramchk":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "1",
+        "upper" : "1",
+        "default" : "1",
+        "abstract" : "Switch for parameter value check. Default = 1.",
+        "notice" : ""
+        },
+"binunit":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "1",
+        "upper" : "1",
+        "default" : "1",
+        "abstract" : "Model parameter geometrical binning model selector. Default = 1;The other optional value is 0.",
+        "notice" : ""
+        },
+"mtrlmod":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "0",
+        "default" : "0",
+        "abstract" : "Gate stack and substrate material model selector.  Default = 0 (Poly Si/oxide/Si MOSFETs);The other optional value is 1 (High-k and metal gates).",
+        "notice" : ""
+        },
+"tempmod":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "0",
+        "default" : "0",
+        "abstract" : "Temperature-dependence model selector. Default = 0; The other optional values are 1, 2, and 3.",
+        "notice" : ""
+        },
+"rdsmod":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "0",
+        "default" : "0",
+        "abstract" : "Bias-dependent LDD source/drain resistance model and topology selector. Default = 0 (Resistances are integrated into the channel current model formulation;  The other optional value is 1(the resistances are lumped into the source and drain diffusion resistances and connected between the internal and external source and drain nodes).",
+        "notice" : ""
+        },
+"mobmod":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "0",
+        "default" : "0",
+        "abstract" : "Mobility model selector.  Default = 0. The other optional values are 1, 2, and 3.",
+        "notice" : ""
+        },
+"wpemod":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "1",
+        "upper" : "1",
+        "default" : "1",
+        "abstract" : "The well-proximity effect model. Default = 0;  The other optional value is 1.",
+        "notice" : ""
+        },
+"l":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "5.00E-06",
+        "abstract" : "Drawn length of the gate.",
+        "notice" : "A fatal error message will be issued if (L + XL) is less than or equal to XGL."
+        },
+"w":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "5.00E-06",
+        "abstract" : "Drawn width of the gate.",
+        "notice" : ""
+        },
+"sa":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "0",
+        "abstract" : "Distance of one gate edge to one LOD edge. Default = 0.0 in [m].",
+        "notice" : ""
+        },
+"sb":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "0",
+        "abstract" : "Distance of the other gate edge to the other LOD edge. Default = 0.0 in [m].",
+        "notice" : ""
+        },
+"sc":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "0",
+        "abstract" : "Distance from the gate edge to the edge of the well. Default = 0.0 in [m].",
+        "notice" : "A warning message will be issued if it is less than zero and it will be reset to zero when WPEMOD is set to 1."
+        },
+"sd":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "2",
+        "abstract" : "Spacing between the edges of two adjacent gates of a multi-finger device. Default = 2.0*DMCG in [m].",
+        "notice" : ""
+        },
+"sca":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "0",
+        "abstract" : "Integral of the first-order photoresist-scattered dopant distribution function. Default = 0.0.",
+        "notice" : "A warning message will be issued if it is less than zero and it will be reset to zero when WPEMOD is set to 1."
+        },
+"scb":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "0",
+        "abstract" : "Integral of the second-order photoresist-scattered dopant distribution function. Default = 0.0.",
+        "notice" : "A warning message will be issued if it is less than zero and it will be reset to zero when WPEMOD is set to 1."
+        },
+"scc":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "0",
+        "abstract" : "Integral of the third-order photoresist-scattered dopant distribution function. Default = 0.0.",
+        "notice" : "A warning message will be issued if it is less than zero and it will be reset to zero when WPEMOD is set to 1."
+        },
+"toxe":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "5.00E-08",
+        "default" : "3.00E-09",
+        "abstract" : "(Equivalent) electrical gate oxide thickness. Default = 30.0 ¡Á 10^-10 in [m].",
+        "notice" : "If it is not positive, a fatal error message will be issued. When MTRLMOD = 1, it is EOT."
+        },
+"toxm":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "5.00E-08",
+        "default" : "3.00E-09",
+        "abstract" : "Target (equivalent) electrical gate oxide thickness at which the BSIM4 model parameters are extracted. Default = TOXE in [m].",
+        "notice" : "If it is not positive, a fatal error message will be issued."
+        },
+"toxp":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "5.00E-08",
+        "default" : "3.00E-09",
+        "abstract" : "(Equivalent) physical gate oxide thickness. Default = TOXE in [m].",
+        "notice" : "If it is not positive, a fatal error message will be issued. When MTRLMOD = 1, it is computed by BSIM4 automatically."
+        },
+"toxref":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "3.00E-09",
+        "abstract" : "The target gate oxide/dielectric layer thickness for the gate direct-tunneling model [refer to the chapter on the gate-direct tunneling current model]. Default = 30.0 ¡Á 10^-10 in [m].",
+        "notice" : "If it is not positive, a fatal error message will be issued."
+        },
+"dtox":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "5.00E-08",
+        "default" : "0",
+        "abstract" : "The difference between TOXE and TOXP. Default = 0.0 in [m].",
+        "notice" : "If it is not equal to the difference between TOXE and TOXP, it will be ignored by BSIM4."
+        },
+"eot":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "1.50E-09",
+        "abstract" : "Equivalent oxide thickness of the gate dielectric layer for MTRLMOD = 1. Default = 15.0 ¡Á 10^-10 in [m].",
+        "notice" : "If it is not positive, a fatal error message will be issued."
+        },
+"vddeot":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "-Inf",
+        "upper" : "Inf",
+        "default" : "1.5",
+        "abstract" : "The power supply voltage for the gate voltage at which EOT is extracted from measured gate capacitance when MTRLMOD = 1. Default = 1.5 for NMOS and -1.5 for PMOS in [V].",
+        "notice" : "If it is not positive, a fatal error message will be issued."
+        },
+"tempeot":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "300.15",
+        "upper" : "300.15",
+        "default" : "300.15",
+        "abstract" : "The temperature at which TOXP is extracted from EOT when MTRLMOD = 1. Default = 300.15 in [Kelvin].",
+        "notice" : ""
+        },
+"leffeot":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "1.00E-06",
+        "abstract" : "The effective channel length at which TOXP is extracted from EOT when MTRLMOD = 1. Default = 1.0 ¡Á 10^-6 in [m].",
+        "notice" : ""
+        },
+"weffeot":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "1.00E-05",
+        "abstract" : "The effective channel width at which TOXP is extracted from EOT when MTRLMOD = 1. Default = 10.0 ¡Á 10^-6 in [m].",
+        "notice" : ""
+        },
+"epsrox":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "3.9",
+        "upper" : "3.9",
+        "default" : "3.9",
+        "abstract" : "Relative dielectric constant of the gate dielectric layer for MTRLMOD = 0. Default = 3.9.",
+        "notice" : "If it is less than 0.0, a fatal error message will be issued. "
+        },
+"epsrsub":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "11.7",
+        "abstract" : "Relative dielectric constant of the substrate for MTRLMOD = 1. Default = 11.7.",
+        "notice" : "If it is less than 0.0, a fatal error message will be issued. "
+        },
+"epsrgate":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "11.7",
+        "abstract" : "Relative dielectric constant of the gate. If MTRLMOD = 0, the material is poly silicon. If it is zero, a metal gate is impliedand no gate depletion will take place and be modeled. Default = 11.7.",
+        "notice" : "If it is less than 0.0, a fatal error message will be issued. "
+        },
+"lmax":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "2.00E-05",
+        "abstract" : "Maximum channel length",
+        "notice" : ""
+        },
+"lmin":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "2.80E-08",
+        "abstract" : "Minimum channel length",
+        "notice" : ""
+        },
+"wmax":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "1.00E-04",
+        "abstract" : "Maximum channel width",
+        "notice" : ""
+        },
+"wmin":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "2.80E-08",
+        "abstract" : "Minimum channel width",
+        "notice" : ""
+        },
+"xl":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "-1.00E-07",
+        "upper" : "1.00E-07",
+        "default" : "0",
+        "abstract" : "Offset between designed and actual physical gate lengths due to mask/etch effect. Default = 0.0 in [m].",
+        "notice" : "If it makes L physical less than XGL, a fatal error message will be issued."
+        },
+"xw":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "-1.00E-07",
+        "upper" : "1.00E-07",
+        "default" : "0",
+        "abstract" : "Offset between designed and actual physical gate widths due to mask/etch effect. Default = 0.0 in [m].",
+        "notice" : ""
+        },
+"lint":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "-1.00E-07",
+        "upper" : "1.00E-07",
+        "default" : "0",
+        "abstract" : "Gate-source or -drain overlap length. Default = 0.0 in [m].",
+        "notice" : ""
+        },
+"dlc":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "-1.00E-07",
+        "upper" : "1.00E-07",
+        "default" : "0",
+        "abstract" : "Gate-source or -drain overlap length for capacitance models. Default = LINT in [m].",
+        "notice" : ""
+        },
+"wint":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "-1.00E-07",
+        "upper" : "1.00E-07",
+        "default" : "0",
+        "abstract" : "Gate and channel edge overlap length in the width direction. Default = 0.0 in [m].",
+        "notice" : ""
+        },
+"dwc":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "-1.00E-07",
+        "upper" : "1.00E-07",
+        "default" : "0",
+        "abstract" : "Gate and channel edge overlap length in the width direction for capacitance models. Default = WINT in [m].",
+        "notice" : ""
+        },
+"dwj":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "0",
+        "default" : "0",
+        "abstract" : "Gate and channel edge overlap length in the width direction for junction diode models. Default = DWC in [m].",
+        "notice" : ""
+        },
+"ll":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "-1.00E-13",
+        "upper" : "1.00E-13",
+        "default" : "0",
+        "abstract" : "Coefficient of length dependence for LINT.",
+        "notice" : ""
+        },
+"lw":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "-1.00E-13",
+        "upper" : "1.00E-13",
+        "default" : "0",
+        "abstract" : "Coefficient of width dependence for LINT.",
+        "notice" : ""
+        },
+"lwl":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "-1.00E-20",
+        "upper" : "1.00E-20",
+        "default" : "0",
+        "abstract" : "Coefficient of length and width cross term dependence for LINT.",
+        "notice" : ""
+        },
+"lln":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0.85",
+        "upper" : "1.15",
+        "default" : "1",
+        "abstract" : "Power of length dependence for LINT.",
+        "notice" : ""
+        },
+"lwn":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0.85",
+        "upper" : "1.15",
+        "default" : "1",
+        "abstract" : "Power of width dependence for LINT.",
+        "notice" : ""
+        },
+"llc":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "-1.00E-13",
+        "upper" : "1.00E-13",
+        "default" : "0",
+        "abstract" : "Coefficient of length dependence for DLC for capacitance models.",
+        "notice" : ""
+        },
+"lwc":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "-1.00E-13",
+        "upper" : "1.00E-13",
+        "default" : "0",
+        "abstract" : "Coefficient of width dependence for DLC for capacitance models.",
+        "notice" : ""
+        },
+"lwlc":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "-1.00E-20",
+        "upper" : "1.00E-20",
+        "default" : "0",
+        "abstract" : "Coefficient of length and width crossterm dependence for DLC for capacitance models.",
+        "notice" : ""
+        },
+"wl":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "-1.00E-13",
+        "upper" : "1.00E-13",
+        "default" : "0",
+        "abstract" : "Coefficient of length dependence for WINT.",
+        "notice" : ""
+        },
+"ww":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "-1.00E-13",
+        "upper" : "1.00E-13",
+        "default" : "0",
+        "abstract" : "Coefficient of width dependence for WINT.",
+        "notice" : ""
+        },
+"wwl":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "-1.00E-20",
+        "upper" : "1.00E-20",
+        "default" : "0",
+        "abstract" : "Coefficient of length and width cross term dependence for WINT.",
+        "notice" : ""
+        },
+"wln":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0.85",
+        "upper" : "1.15",
+        "default" : "1",
+        "abstract" : "Power of length dependence for WINT.",
+        "notice" : ""
+        },
+"wwn":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0.85",
+        "upper" : "1.15",
+        "default" : "1",
+        "abstract" : "Power of width dependence for WINT.",
+        "notice" : ""
+        },
+"wlc":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "-1.00E-13",
+        "upper" : "1.00E-13",
+        "default" : "0",
+        "abstract" : "Coefficient of length dependence for DWC for capacitance models.",
+        "notice" : ""
+        },
+"wwc":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "-1.00E-13",
+        "upper" : "1.00E-13",
+        "default" : "0",
+        "abstract" : "Coefficient of width dependence for DWC for capacitance models.",
+        "notice" : ""
+        },
+"wwlc":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "-1.00E-20",
+        "upper" : "1.00E-20",
+        "default" : "0",
+        "abstract" : "Coefficient of length and width crossterm dependence for DWC for capacitance models.",
+        "notice" : ""
+        },
+"dwg":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "-1.00E-07",
+        "upper" : "1.00E-07",
+        "default" : "0",
+        "abstract" : "Coefficient of gate bias dependence of Weff. Default = 0.0m/V.",
+        "notice" : ""
+        },
+"dwb":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0",
+        "upper" : "1.00E-07",
+        "default" : "0",
+        "abstract" : "Coefficient of body bias dependence of Weff bias dependence. Default = 0.0m/(V^1/2).",
+        "notice" : ""
+        },
+"tnom":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "25",
+        "upper" : "25",
+        "default" : "25",
+        "abstract" : "Nominal temperature at which model parameters are extracted.",
+        "notice" : ""
+        },
+"bg0sub":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "1.16",
+        "abstract" : "Band gap of the substrate at 0 Kelvin for MTRLMOD = 1. Default = 1.16 in [eV].",
+        "notice" : ""
+        },
+"tbgasub":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "7.02E-04",
+        "abstract" : "Temperature dependence parameter of the band gap of the substrate for MTRLMOD =1. Default = 7.02 ¡Á 10^-4 in [eV/Kelvin].",
+        "notice" : ""
+        },
+"tbgbsub":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "1108",
+        "abstract" : "Temperature dependence parameter of the band gap of the substrate for MTRLMOD =1. Default = 1108.0 in [Kelvin].",
+        "notice" : ""
+        },
+"ni0sub":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "1.45E+10",
+        "abstract" : "Intrinsic carrier concentration of the substrate at 300.15 degree Kelvin for MTRLMOD = 1. Default = 1.45 ¡Á 10^10 in [cm^-3 ].",
+        "notice" : "A fatal error message will be issued if it is not positive."
+        },
+"nsd":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "1.00E+20",
+        "abstract" : "Doping concentrations of the source and drain diffusion regions. Default = 1.0 ¡Á 10^20 in [cm^-3 ].",
+        "notice" : ""
+        },
+"ndep":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "1.70E+17",
+        "abstract" : "Channel doping concentrations. Default = 1.7 ¡Á 10^17 in [cm^-3 ].",
+        "notice" : "If its binned value is not positive, a fatal error message will be issued."
+        },
+"ngate":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "1.00E+18",
+        "upper" : "1.00E+25",
+        "default" : "1.00E+22",
+        "abstract" : "The doping concentration of poly-silicon gate.",
+        "notice" : "If its binned value is less than zero, a fatal error message will be issued."
+        },
+"nsub":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "6.00E+16",
+        "abstract" : "Substrate doping concentrations. Default = 6.0 ¡Á 10^16 in [cm^-3 ].",
+        "notice" : "If its binned value is not positive, a fatal error message will be issued."
+        },
+"vth0":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "-1.5",
+        "upper" : "1.5",
+        "default" : "0.7",
+        "abstract" : "Long-channel zero body bias threshold voltage. Default = Computed if not given, in unit of [V].",
+        "notice" : ""
+        },
+"vfb":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "-Inf",
+        "upper" : "Inf",
+        "default" : "-1",
+        "abstract" : "Flat-band voltage. Default = Computed if not given, in unit of [V].",
+        "notice" : ""
+        },
+"dvt0":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0",
+        "upper" : "10",
+        "default" : "2.2",
+        "abstract" : "Vth roll-off coefficient parameter. Default = 2.2.",
+        "notice" : "If its binned value is less than 0, a warning message will be issued."
+        },
+"dvt1":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0",
+        "upper" : "1",
+        "default" : "0.53",
+        "abstract" : "Vth roll-off length-dependence parameter. Default = 0.53.",
+        "notice" : "If its binned value is less than 0, a fatal error message will be issued."
+        },
+"dvt2":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "-0.1",
+        "upper" : "0.5",
+        "default" : "-0.032",
+        "abstract" : "Body-bias coefficient of the characteristic length of the V th roll-off model.Default = -0.032 in [V^-1 ].",
+        "notice" : ""
+        },
+"k1":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0",
+        "upper" : "1",
+        "default" : "0.53",
+        "abstract" : "First-order body bias coefficient of the Vth model. Default = 0.53 in [V^-1/2 ].",
+        "notice" : "If it is not given but K2 is, it will be set to 0.53. If neither is given, it will be computed."
+        },
+"k2":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "-1",
+        "upper" : "0.1",
+        "default" : "0",
+        "abstract" : "Second-order body bias coefficient of the Vth model for non-uniform vertical doping. Default = -0.0186.",
+        "notice" : "If it is not given but K1 is, it will be set to -0.0186. If neither is given, it will be computed."
+        },
+"xt":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "1.55E-07",
+        "abstract" : "The depth of the delta doping. Default = 1.55 ¡Á 10^-7 in [m].",
+        "notice" : ""
+        },
+"vbm":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "-Inf",
+        "upper" : "Inf",
+        "default" : "-3",
+        "abstract" : "The maximum body voltage applicable to a given process technology. Default = -3.0 in [V].",
+        "notice" : ""
+        },
+"gamma1":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "-Inf",
+        "upper" : "Inf",
+        "default" : "0",
+        "abstract" : "First-order body bias coefficient of the Vth model. Default = Computed from NDEP if not specified, in unit of [V^-1/2 ]. (near the surface)",
+        "notice" : ""
+        },
+"gamma2":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "-Inf",
+        "upper" : "Inf",
+        "default" : "0",
+        "abstract" : "First-order body bias coefficient of the Vth model. Default = Computed from NSUB if not specified, in unit of [V^-1/2 ]. (in the bulk)",
+        "notice" : ""
+        },
+"vbx":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "-Inf",
+        "upper" : "Inf",
+        "default" : "0",
+        "abstract" : "The body voltage at which the depletion width is equal to XT. Default = Computed if not specified, in unit of [V].",
+        "notice" : ""
+        },
+"k3":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "-10",
+        "upper" : "100",
+        "default" : "80",
+        "abstract" : "Narrow-width effect for the Vth model. Default = 80.0.",
+        "notice" : ""
+        },
+"k3b":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "-10",
+        "upper" : "10",
+        "default" : "0",
+        "abstract" : "Narrow-width effect for the Vth model (Body effect). Default = 0.0 in [V^-1 ].",
+        "notice" : ""
+        },
+"phin":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "-0.2",
+        "upper" : "0.2",
+        "default" : "0",
+        "abstract" : "Surface potential offset parameter owing to non-uniform vertical doping. Default = 0.0 in [V].",
+        "notice" : "A fatal error message will be issued if it produces a negative surface potential."
+        },
+"w0":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0",
+        "upper" : "1.00E-05",
+        "default" : "2.50E-06",
+        "abstract" : "Narrow-width effect model parameter for the widest device for the V th model. Default = 2.5 ¡Á 10^-6 in [m].",
+        "notice" : "A fatal error message will be issued if its binned value has the opposite value Weff because of divide-by-zero error."
+        },
+"dvt0w":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "-0.1",
+        "upper" : "10",
+        "default" : "0",
+        "abstract" : "Narrow-width and short-channel coefficient parameter for the Vth model. Default = 0.0.",
+        "notice" : ""
+        },
+"dvt1w":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0",
+        "upper" : "1.00E+07",
+        "default" : "5.30E+06",
+        "abstract" : "Narrow-width and short-channel dependence parameter for the Vth model. Default = 5.3 ¡Á 10^-6.",
+        "notice" : "If its binned value is less than 0, a fatal error message will be issued."
+        },
+"dvt2w":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "-0.1",
+        "upper" : "0.5",
+        "default" : "-0.032",
+        "abstract" : "Body-bias coefficient parameter of the width-dependence characteristic length for the Vth model. Default = -0.032 in [V^-1 ].",
+        "notice" : ""
+        },
+"dsub":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0",
+        "upper" : "1",
+        "default" : "0.56",
+        "abstract" : "Length-dependence parameter for the Vth DIBL effects. Default = DROUT = 0.56.",
+        "notice" : "If its binned value is negative, a fatal error message will be issued."
+        },
+"eta0":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0.05",
+        "upper" : "1",
+        "default" : "0.08",
+        "abstract" : "Vds-dependence coefficient for the Vth DIBL model. Default = 0.08",
+        "notice" : "If its binned value is negative, a warning message will be issued."
+        },
+"etab":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "-1",
+        "upper" : "0",
+        "default" : "-0.07",
+        "abstract" : "Body-bias coefficient for the V th DIBL model. Default = -0.07.",
+        "notice" : "If its binned value is negative, a warning message will be issued."
+        },
+"lpe0":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0",
+        "upper" : "1.00E-05",
+        "default" : "1.74E-07",
+        "abstract" : "Vth roll-up parameter owing to pocket implants. It models the increase in the equivalent channel doping. Default = 1.74 ¡Á 10^-7 in [m].",
+        "notice" : "If its binned value is less than Leff , a fatal error message will be issued."
+        },
+"lpeb":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "-1.00E-05",
+        "upper" : "1.00E-05",
+        "default" : "0",
+        "abstract" : "Vth roll-up parameter owing to pocket implants. It models the increase in the body-bias effect because of the increase in the equivalent channel doping. Default = 0.0 in [m].",
+        "notice" : "If its binned value is less than Leff , a fatal error message will be issued."
+        },
+"dvtp0":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0",
+        "upper" : "1.00E-04",
+        "default" : "0",
+        "abstract" : "Length-dependence of DITS (drain-induced threshold shifts) of pocket-implanted devices. Default = 0.0 in [m].",
+        "notice" : "If its binned value is not positive, no DITS will be modeled."
+        },
+"dvtp1":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0",
+        "upper" : "1",
+        "default" : "0",
+        "abstract" : "Drain bias dependence of DITS (drain-induced threshold shifts) of pocket-implanted devices. Default = 0.0 in [V^-1 ].",
+        "notice" : ""
+        },
+"xj":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0",
+        "upper" : "5.00E-07",
+        "default" : "1.50E-07",
+        "abstract" : "Source and drain junction depth. Default = 1.5 ¡Á 10^-7 in [m].",
+        "notice" : "If its binned value is negative, a fatal error message will be issued."
+        },
+"kt1":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "-2",
+        "upper" : "0",
+        "default" : "-0.11",
+        "abstract" : "Temperature-dependence coefficient parameter of the threshold voltage model. Default = -0.11 in [V].",
+        "notice" : ""
+        },
+"kt1l":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "-1",
+        "upper" : "1",
+        "default" : "0",
+        "abstract" : "Channel-length dependence parameter of the threshold voltage temperature-dependence model. Default = 0.0 in [V  m].",
+        "notice" : ""
+        },
+"kt2":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "-1",
+        "upper" : "1",
+        "default" : "0.022",
+        "abstract" : "Body bias coefficient parameter for the threshold voltage temperature-dependence model. Default = 0.022.",
+        "notice" : ""
+        },
+"a0":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0",
+        "upper" : "3",
+        "default" : "1",
+        "abstract" : "Length-dependence of the Abulk model. Default = 1.0.",
+        "notice" : ""
+        },
+"b0":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "-1",
+        "upper" : "1",
+        "default" : "0",
+        "abstract" : "The first width-dependence of the Abulk model. Default = 0.0 in [m].",
+        "notice" : ""
+        },
+"b1":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "-1.00E-05",
+        "upper" : "0.001",
+        "default" : "0",
+        "abstract" : "The second width-dependence of the Abulk model. Default = 0.0 in [m].",
+        "notice" : "If the sum its binned value and Weff becomes zero, a fatal error message will be issued."
+        },
+"keta":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "-1",
+        "upper" : "1",
+        "default" : "-0.047",
+        "abstract" : "Body-bias coefficient of the Abulk model. Default = -0.047 in [V^-1 ].",
+        "notice" : ""
+        },
+"ags":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "-5",
+        "upper" : "5",
+        "default" : "0",
+        "abstract" : "Gate bias (Vgs) dependence of the Abulk model. Default = 0.0 in [V^-1 ].",
+        "notice" : ""
+        },
+"rdsw":
+        {
+        "binable" : "1",
+        "binType" : "2",
+        "lower" : "0",
+        "upper" : "3.00E+04",
+        "default" : "200",
+        "abstract" : "Zero-bias source and drain LDD resistance component per unit width for RDSMOD = 0. Default = 200.0 in [ohm ¡Á (um)^WR ].",
+        "notice" : "A warning message will be issued if its binned value is less than zero. It will then be reset to zero."
+        },
+"wr":
+        {
+        "binable" : "1",
+        "binType" : "2",
+        "lower" : "-Inf",
+        "upper" : "Inf",
+        "default" : "1",
+        "abstract" : "The power of the width dependence of source and drain LDD resistances. Default = 1.0.",
+        "notice" : ""
+        },
+"rdswmin":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "0",
+        "abstract" : "Source and drain LDD resistance component per unit width at zero body bias and high gate voltages for RDSMOD = 0. Default = 0.0 in [ohm ¡Á (um)^WR ].",
+        "notice" : "A warning message will be issued if it is less than zero. It will then be reset to zero."
+        },
+"prwg":
+        {
+        "binable" : "1",
+        "binType" : "2",
+        "lower" : "0",
+        "upper" : "1",
+        "default" : "1",
+        "abstract" : "Gate bias dependence parameter of the LDD source and drain resistances. Default = 1.0 in [V^-1 ].",
+        "notice" : "A warning message will be issued if its binned value is less than zero. It will then be reset to zero."
+        },
+"prwb":
+        {
+        "binable" : "1",
+        "binType" : "2",
+        "lower" : "-0.001",
+        "upper" : "0.001",
+        "default" : "0",
+        "abstract" : "Body bias dependence parameter of the LDD source and drain resistances. Default = 0.0 in [V^-0.5 ].",
+        "notice" : ""
+        },
+"rdw":
+        {
+        "binable" : "1",
+        "binType" : "2",
+        "lower" : "-Inf",
+        "upper" : "Inf",
+        "default" : "100",
+        "abstract" : "Zero-bias drain LDD resistance component per unit width for RDSMOD = 1. Default = 100.0 in [ohm ¡Á (um)^WR ].",
+        "notice" : "A warning message will be issued if its temperature de-rated value at Temp is negative. Its temperature de-rated value will then be reset to zero."
+        },
+"rdwmin":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "-Inf",
+        "upper" : "Inf",
+        "default" : "0",
+        "abstract" : "Drain LDD resistance component per unit width at zero body bias and high gate voltages for RDSMOD = 1. Default = 0.0 in [ohm ¡Á (um)^WR ].",
+        "notice" : "A warning message will be issued if its temperature de-rated value at Temp is negative. Its temperature de-rated value will then be reset to zero."
+        },
+"rsw":
+        {
+        "binable" : "1",
+        "binType" : "2",
+        "lower" : "-Inf",
+        "upper" : "Inf",
+        "default" : "100",
+        "abstract" : "Zero-bias source LDD resistance component per unit width for RDSMOD = 1. Default = 100.0 in [ohm ¡Á (um)^WR ].",
+        "notice" : "A warning message will be issued if its temperature de-rated value at Temp is negative. Its temperature de-rated value will then be reset to zero."
+        },
+"rswmin":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "-Inf",
+        "upper" : "Inf",
+        "default" : "0",
+        "abstract" : "Source LDD resistance component per unit width at zero body bias and high gate voltages for RDSMOD = 1. Default = 0.0 in [ohm ¡Á (um)^WR ].",
+        "notice" : "A warning message will be issued if its temperature de-rated value at Temp is negative. Its temperature de-rated value will then be reset to zero."
+        },
+"prt":
+        {
+        "binable" : "1",
+        "binType" : "2",
+        "lower" : "-Inf",
+        "upper" : "Inf",
+        "default" : "0",
+        "abstract" : "Temperature dependence coefficient of the source and drain LDD resistances. Default = 0.0 in [ohm ¡Á (um)^WR ] for TEMPMOD = 0 and 0.0 in [1/Kelvin] for other TEMPMOD settings (= 1, 2 or 3).",
+        "notice" : ""
+        },
+"ados":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "1",
+        "abstract" : "Inversion charge thickness parameter to account the density of states, used in both the DC channel current and the CAPMOD = 2 charge and capacitance models. Default = 1.0.",
+        "notice" : ""
+        },
+"bdos":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "1",
+        "abstract" : "Inversion charge thickness power parameter to account the density of states, used in both the DC channel current and the CAPMOD = 2 charge and capacitance models.Default = 1.0.",
+        "notice" : ""
+        },
+"phig":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "4.05",
+        "abstract" : "Work function of (metal) gates. Default = 4.05 in [V].",
+        "notice" : ""
+        },
+"easub":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "4.05",
+        "abstract" : "Electron affinity of substrates. Default = 4.05 in [V].",
+        "notice" : "A fatal error message will be issued if it is negative."
+        },
+"u0":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0.001",
+        "upper" : "0.1",
+        "default" : "0.067",
+        "abstract" : "Low-field mobility. Default = 0.067 for NMOS and 0.025 for PMOS in [m^2 /(V ¡Á s)].",
+        "notice" : "A fatal error message will be issued if its temperature de-rated value at Temp is not positive."
+        },
+"up":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "-10",
+        "upper" : "10",
+        "default" : "0",
+        "abstract" : "Coefficient of the channel-length dependence of the low-field mobility U0. Default = 0.0.",
+        "notice" : ""
+        },
+"lp":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0",
+        "upper" : "10",
+        "default" : "1.00E-08",
+        "abstract" : "Exponent of the channel-length dependence of the low-field mobility U0. Default = 1.0 ¡Á 10^-8 in [m].",
+        "notice" : ""
+        },
+"ua":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "-3.00E-08",
+        "upper" : "3.00E-08",
+        "default" : "1.00E-09",
+        "abstract" : "First-order gate bias (Vgs) dependence for the effective mobility model. Default = 1.0 ¡Á 10^-15 for MOBMOD = 2 and 1.0 ¡Á 10^-9 for all others in [m/V].",
+        "notice" : ""
+        },
+"ub":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "-1.00E-17",
+        "upper" : "1.00E-17",
+        "default" : "1.00E-19",
+        "abstract" : "Secon-order gate bias(Vgs) dependence for the effective mobility model. Default = 1.0 ¡Á 10^-19 in [(m/V)^2 ].",
+        "notice" : ""
+        },
+"uc":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "-1.00E-09",
+        "upper" : "1.00E-09",
+        "default" : "-4.65E-11",
+        "abstract" : "Body bias dependence for the effective mobility model. Default = -0.0465 for MOBMOD = 1 and -0.0465 ¡Á 10^-9 for all others in [m/V^2 for MOBMOD = 0; V^-1 for MOBMOD = 1; and m^EU/V^(EU+1) for MOBMOD = 2 and 3].",
+        "notice" : ""
+        },
+"ud":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "-Inf",
+        "upper" : "Inf",
+        "default" : "0",
+        "abstract" : "Coulomb scattering dependence parameter for the effective mobility model. Default = 0.0 in [m^-2 for MOBMOD = 0, 1, and 2; dimensionless for MOBMOD = 3].",
+        "notice" : ""
+        },
+"eu":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "1.67",
+        "abstract" : "Power of the field dependence for the Coulomb scattering of the effective mobility model MOBMOD = 2 and 3. Default = 1.67 for NMOS and 1.0 for PMOS.",
+        "notice" : "A warning message will be issued if its binned value is negative. It will be reset to 0.0."
+        },
+"ucs":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "1.67",
+        "abstract" : "Power of the gate bias dependence for the Coulomb scattering of the effective mobility model MOBMOD = 3. Default = 1.67 for NMOS and 1.0 for PMOS.",
+        "notice" : "A warning message will be issued if its binned value is negative. It will be reset to 0.0."
+        },
+"ute":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "-2",
+        "upper" : "-0.5",
+        "default" : "-1.5",
+        "abstract" : "Power of low-field mobility U0  temperature dependence. Default = -1.5.",
+        "notice" : ""
+        },
+"ucste":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "-Inf",
+        "upper" : "Inf",
+        "default" : "-4.775E-03",
+        "abstract" : "Power of temperature dependence of UCS. Default = -4.775 ¡Á 10^-3 .",
+        "notice" : ""
+        },
+"ua1":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "-0.1",
+        "upper" : "0.1",
+        "default" : "1.00E-09",
+        "abstract" : "Temperature dependence coefficient of the parameter UA. Default = 1.0 ¡Á 10^-9 in [The same unit as UA for TEMPMOD = 0; 1/Kelvin for TEMPMOD = 1 and 2; and dimensionless for TEMPMOD = 3].",
+        "notice" : ""
+        },
+"ub1":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "-0.1",
+        "upper" : "0.1",
+        "default" : "1.00E-18",
+        "abstract" : "Temperature dependence coefficient of UB. Default = -1.0 ¡Á 10^-18 in [The same unit as UB for TEMPMOD = 0; 1/Kelvin for TEMPMOD = 1 and 2; and dimensionless for TEMPMOD = 3].",
+        "notice" : ""
+        },
+"uc1":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "-0.1",
+        "upper" : "0.1",
+        "default" : "-5.60E-11",
+        "abstract" : "Temperature dependence coefficient of UC.Default = -0.056 for MOBMOD = 1 and -0.056 ¡Á 10^-9 for all others in [The same unit as UC for TEMPMOD = 0; 1/Kelvin for TEMPMOD = 1 and 2; and dimensionless for TEMPMOD = 3].",
+        "notice" : ""
+        },
+"ud1":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "-Inf",
+        "upper" : "Inf",
+        "default" : "0",
+        "abstract" : "Temperature dependence coefficient of the parameter UD. Default = 0.0 in [The same unit as UD for TEMPMOD = 0; 1/Kelvin for TEMPMOD = 1 and 2; and dimensionless for TEMPMOD = 3].",
+        "notice" : ""
+        },
+"saref":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "1.00E-04",
+        "default" : "1.00E-06",
+        "abstract" : "Reference spacing in the channel length direction between one edge of the OD and one edge of the gate. Default = 1.0 ¡Á 10^-6 in [m].",
+        "notice" : "A fatal error message will be issued if it is not positive when the LOD model is turned on."
+        },
+"sbref":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "1.00E-04",
+        "default" : "1.00E-06",
+        "abstract" : "Reference spacing in the channel length direction between the other edge of the OD and the other edge of the gate. Default = 1.0 ¡Á 10^-6 in [m].",
+        "notice" : "A fatal error message will be issued if it is not positive when the LOD model is turned on."
+        },
+"ku0":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "-10",
+        "upper" : "100",
+        "default" : "0",
+        "abstract" : "Mobility enhancement/reduction coefficient because of LOD. Default = 0.0 in [m].",
+        "notice" : ""
+        },
+"tku0":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "-10",
+        "upper" : "100",
+        "default" : "0",
+        "abstract" : "Temperature dependence for KU0 of the LOD model. Default = 0.0 in [1/Kelvin].",
+        "notice" : ""
+        },
+"lku0":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "-3.00E-07",
+        "upper" : "3.00E-07",
+        "default" : "0",
+        "abstract" : "Length dependence of KU0. Default = 0.0 in [m^LLODKU0 ].",
+        "notice" : ""
+        },
+"wku0":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "-1",
+        "upper" : "1",
+        "default" : "0",
+        "abstract" : "Width dependence of KU0. Default = 0.0 in [m^WLODKU0 ].",
+        "notice" : ""
+        },
+"pku0":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "-10",
+        "upper" : "100",
+        "default" : "0",
+        "abstract" : "Width and length cross-term dependence parameter of KU0. Default = 0.0 in [m^(LLODKU0 + WLODKU0) ].",
+        "notice" : ""
+        },
+"llodku0":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "-10",
+        "upper" : "100",
+        "default" : "0",
+        "abstract" : "The power of the length dependence of KU0. Default = 0.0.",
+        "notice" : ""
+        },
+"wlodku0":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "-10",
+        "upper" : "100",
+        "default" : "0",
+        "abstract" : "The power of the width dependence of KU0. Default = 0.0.",
+        "notice" : ""
+        },
+"wlod":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "-1",
+        "upper" : "1",
+        "default" : "0",
+        "abstract" : "Channel width offset parameter for LOD. Default = 0.0 in [m].",
+        "notice" : ""
+        },
+"kvsat":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "-10",
+        "upper" : "100",
+        "default" : "0",
+        "abstract" : "Saturation velocity enhancement/reduction coefficient because of LOD. Default = 0.0.",
+        "notice" : "A warning message will be issued and it will be reset to -1.0 if less than -1.0. A warning message will be issued and it will be reset to 1.0 if greater than 1.0."
+        },
+"kvth0":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "-10",
+        "upper" : "100",
+        "default" : "0",
+        "abstract" : "Threshold voltage increase/decrease parameter because of LOD. Default = 0.0 in [V ¡Á m].",
+        "notice" : ""
+        },
+"lkvth0":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "-3.00E-07",
+        "upper" : "3.00E-07",
+        "default" : "0",
+        "abstract" : "Length dependence of KVTH0. Default = 0.0 in [m^LLODVTH ].",
+        "notice" : ""
+        },
+"wkvth0":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "-1",
+        "upper" : "1",
+        "default" : "0",
+        "abstract" : "Width dependence of KVTH0. Default = 0.0 in [m^WLODVTH ].",
+        "notice" : ""
+        },
+"pkvth0":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "-1",
+        "upper" : "1",
+        "default" : "0",
+        "abstract" : "Width and length cross-term dependence of KVTH0. Default = 0.0 in [m^(LLODVTH + WLODVTH) ].",
+        "notice" : ""
+        },
+"llodvth":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "-10",
+        "upper" : "100",
+        "default" : "0",
+        "abstract" : "The power of the length dependence of KVTH0. Default = 0.0.",
+        "notice" : ""
+        },
+"wlodvth":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "-10",
+        "upper" : "100",
+        "default" : "0",
+        "abstract" : "The power of the width dependence of KVTH0. Default = 0.0.",
+        "notice" : ""
+        },
+"stk2":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "-1",
+        "upper" : "1",
+        "default" : "0",
+        "abstract" : "K2 increase/decrease parameter because of LOD. Default = 0.0 in [m].",
+        "notice" : ""
+        },
+"lodk2":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "-10",
+        "upper" : "100",
+        "default" : "1",
+        "abstract" : "The power of the geometry dependence of STK2 because of LOD. Default = 1.0.",
+        "notice" : "A warning message will be issues when it is not positive and when the LOD model  evaluation is turned on. "
+        },
+"steta0":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "-1",
+        "upper" : "1",
+        "default" : "0",
+        "abstract" : "ETA0 increase/decrease parameter because of LOD. Default = 0.0 in [m].",
+        "notice" : ""
+        },
+"lodeta0":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "100",
+        "default" : "1",
+        "abstract" : "The power of the geometry dependence of STETA0 because of LOD. Default = 1.0.",
+        "notice" : "A warning message will be issues when it is not positive and when the LOD model evaluation is turned on."
+        },
+"scref":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "1.00E-6",
+        "abstract" : "The reference value of SC of the WPE model. Default = 1 ¡Á 10^-6 in [m].",
+        "notice" : "A warning message will be issued if it is less than or equal to zero when the WPE model is turned. It is then reset to 1.0 ¡Á 10^-6 m."
+        },
+"ku0we":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "-1.00E+10",
+        "upper" : "1.00E+10",
+        "default" : "0",
+        "abstract" : "Coefficient for the low-field mobility U0 because of WPE. Default = 0.0.",
+        "notice" : ""
+        },
+"kvth0we":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "-1.00E+10",
+        "upper" : "1.00E+10",
+        "default" : "0",
+        "abstract" : "Coefficient for VTH0 because of WPE. Default = 0.0 in [V].",
+        "notice" : ""
+        },
+"k2we":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "-1.00E+10",
+        "upper" : "1.00E+10",
+        "default" : "0",
+        "abstract" : "Coefficient for K2 because of WPE. Default = 0.0.",
+        "notice" : ""
+        },
+"web":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "1",
+        "upper" : "1",
+        "default" : "1",
+        "abstract" : "Coefficient of SCB because of WPE.",
+        "notice" : ""
+        },
+"wec":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "1",
+        "upper" : "1",
+        "default" : "1",
+        "abstract" : "Coefficient of SCC because of WPE. ",
+        "notice" : ""
+        },
+"voff":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "-0.3",
+        "upper" : "0",
+        "default" : "-0.08",
+        "abstract" : "Offset voltage of the effective gate drive.Default = -0.08 in [V].",
+        "notice" : ""
+        },
+"voffl":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "-1.00E-05",
+        "upper" : "1.00E-05",
+        "default" : "0",
+        "abstract" : "Length dependence for VOFF. Default = 0.0 in [V ¡Á m].",
+        "notice" : ""
+        },
+"tvoff":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "-0.01",
+        "upper" : "0.01",
+        "default" : "0",
+        "abstract" : "Temperature dependence for VOFF. Default = 0.0 in [1/Kelvin].",
+        "notice" : ""
+        },
+"minv":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "-1.5",
+        "upper" : "1.5",
+        "default" : "0",
+        "abstract" : "Parameter for the DC channel current in the moderate inversion region. Default = 0.0.",
+        "notice" : ""
+        },
+"nfactor":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0.4",
+        "upper" : "2",
+        "default" : "1",
+        "abstract" : "Coefficient of the depletion capacitance dependence of the subthreshold slope parameter n. Default = 1.0.",
+        "notice" : "A warning message will be issued if its binned value becomes negative."
+        },
+"cdsc":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0",
+        "upper" : "0.001",
+        "default" : "2.40E-04",
+        "abstract" : "Drain-source and the channel coupling capacitance for the subthreshold slope parameter n. Default = 2.4 ¡Á 10^-4 in [Farad/m^2].",
+        "notice" : "A warning message will be issued if its binned value becomes negative."
+        },
+"cdscd":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0",
+        "upper" : "1",
+        "default" : "0",
+        "abstract" : "Drain-bias dependence coefficient of CDSC. Default = 0.0 in [Farad/m^2/V].",
+        "notice" : "A warning message will be issued if its binned value becomes negative."
+        },
+"cdscb":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "-1",
+        "upper" : "1",
+        "default" : "0",
+        "abstract" : "Body-bias dependence coefficient of CDSC. Default = 0.0 in [Farad/m^2/V].",
+        "notice" : ""
+        },
+"cit":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0",
+        "upper" : "0.01",
+        "default" : "0",
+        "abstract" : "Unit-area capacitance owing to the interface  states for the subthreshold slope parameter n. Default = 0.0 in [Farad/m^2].",
+        "notice" : ""
+        },
+"vsat":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "1.00E+04",
+        "upper" : "2.00E+05",
+        "default" : "8.00E+04",
+        "abstract" : "Channel carrier saturation velocity extracted at TNOM. Default = 8.0 ¡Á 10^4 in [m/s].",
+        "notice" : "A fatal error message will be issued if its value after temperature de-rating is not positive; a warning message will be issued if its value after temperature de-rating is less than 1 ¡Á 10^3 ."
+        },
+"at":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "-2.38E-05",
+        "upper" : "1.43E+05",
+        "default" : "3.30E+04",
+        "abstract" : "Temperature-dependence parameter for the saturation velocity VSAT. Default = 3.3 ¡Á 10^4 in [m/s] for TEMPMOD = 0 and 3.3 ¡Á 10^4 in [1/Kelvin] for other TEMPMOD  settings (i.e., 1, 2, and 3).",
+        "notice" : ""
+        },
+"a1":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "-0.2",
+        "upper" : "0",
+        "default" : "0",
+        "abstract" : "PMOS non-saturation effect parameter. Default = 0.0 in [V^-1].",
+        "notice" : "Reset to zero if A2 is greater than 1.0."
+        },
+"a2":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0.1",
+        "upper" : "1",
+        "default" : "1",
+        "abstract" : "PMOS non-saturation effect parameter. Default = 0.0.",
+        "notice" : "A warning message will be issued if its binned value is less than 0.1 and will be reset to 0.1. A warning message will be issued if its binned value is greater than 1.0 and it will be reset to 1.0."
+        },
+"delta":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0.001",
+        "upper" : "0.03",
+        "default" : "0.01",
+        "abstract" : "Parameter of the effective source-drain voltage Vdseff used in the DC current model. It models how rapid carrier velocity saturates when Vds near the saturation voltage Vdsat . Default = 0.01.",
+        "notice" : "A fatal errormessage will be issued if its binned value is negative."
+        },
+"pclm":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "1.00E-10",
+        "upper" : "5",
+        "default" : "1.3",
+        "abstract" : "Channel-length modulation effects on the channel output resistance degradation. Default = 1.3.",
+        "notice" : "A fatal error message will be issued if its binned value is not positive."
+        },
+"pvag":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "-1000",
+        "upper" : "1000",
+        "default" : "0",
+        "abstract" : "Gate bias dependence parameter to model the channel-length modulation effects on the channel output resistance degradation. Default = 0.0.",
+        "notice" : ""
+        },
+"pdiblcb":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "-0.001",
+        "upper" : "1",
+        "default" : "0",
+        "abstract" : "Body bias dependence to model the DIBL effects on the channel output resistance degradation. Default = 0.0 in [V^-1].",
+        "notice" : ""
+        },
+"pdiblc1":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0",
+        "upper" : "2",
+        "default" : "0.39",
+        "abstract" : "Channel-length dependence to model the DIBL effects on the channel output resistance degradation. Default = 0.39.",
+        "notice" : "A warning message will be issued if its binned value is less than zero."
+        },
+"pdiblc2":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0",
+        "upper" : "0.05",
+        "default" : "8.60E-03",
+        "abstract" : "Channel-length dependence to model the DIBL effects on the channel output resistance degradation. Default = 0.0086.",
+        "notice" : "A warning message will be issued if its binned value is less than zero."
+        },
+"drout":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0",
+        "upper" : "1",
+        "default" : "0.56",
+        "abstract" : "Channel-length dependence coefficient to model the DIBL effects on the channel output resistance degradation. Default = 0.56.",
+        "notice" : "A fatal error message will be issued if its binned value is less than zero."
+        },
+"fprout":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0",
+        "upper" : "1.00E+06",
+        "default" : "0",
+        "abstract" : "Coefficient for the channel output resistance degradation due to pocket implants. Default = 0.0 in [V/m^-1/2 ].",
+        "notice" : "A fatal error message will be issued if its binned value is negative."
+        },
+"pdits":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0",
+        "upper" : "100",
+        "default" : "0",
+        "abstract" : "Rout degradation coefficient due to drain-induced threshold voltage shifts caused by pocket implants. Default = 0.0 in [V^-1].",
+        "notice" : "A fatal error message will be issued if its binned value is negative."
+        },
+"pditsl":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "1.00E+10",
+        "default" : "0",
+        "abstract" : "Length-dependence for drain-induced threshold voltage shifts caused by pocket implants. Default = 0.0 in [m^-1].",
+        "notice" : "A fatal error message will be issued if its value is negative."
+        },
+"pditsd":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0",
+        "upper" : "10",
+        "default" : "0",
+        "abstract" : "Drain bias dependence for drain-induced threshold voltage shifts caused by pocket implants. Default = 0.0 in [V^-1 ].",
+        "notice" : ""
+        },
+"pscbe1":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "1.00E+07",
+        "upper" : "1.00E+10",
+        "default" : "4.24E+08",
+        "abstract" : "Drain bias dependence parameter for the substrate current induced body effect. Default = 4.24 ¡Á 10^8 in [V/m].",
+        "notice" : ""
+        },
+"pscbe2":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "1.00E-10",
+        "upper" : "5.00E-05",
+        "default" : "1.00E-05",
+        "abstract" : "Length-dependence parameter for the substrate current induced body effect. Default = 1.0 ¡Á 10^-5 in [m/V].",
+        "notice" : "A warning message will be issued if its binned value is not positive."
+        },
+"lambda":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0",
+        "upper" : "1.00E-09",
+        "default" : "0",
+        "abstract" : "Parameter to model the velocity overshoot effect on the channel critical electric field Esat . Default = 0.0 in [m^3 /(V ¡Á s)].",
+        "notice" : "Velocity overshoot model evaluation will be turned on if this parameter if given and greater than zero. A warning message will also be issued if its value is greater than 1 ¡Á 10^-9 (too large!)"
+        },
+"vtl":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "6.00E+04",
+        "upper" : "Inf",
+        "default" : "2.00E+05",
+        "abstract" : "Electron and hole thermal injection speed at source of the source-end velocity limit model. Default = 2.0 ¡Á 10^5 in [m/s].",
+        "notice" : "A warning message will be issued when its binned value is less than 6 ¡Á 10^4 (too small), if it is given and its binned value is greater than zero."
+        },
+"xn":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "3",
+        "upper" : "Inf",
+        "default" : "3",
+        "abstract" : "Channel-length dependence coefficient parameter for the backward scattering of the source-end velocity limit model. Default = 3.0.",
+        "notice" : "A warning message will be issued when its binned value is less than 3 (too small), if VTL is given and the binned value of VTL is greater than zero. It will then be reset to 3."
+        },
+"lc":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "5.00E-09",
+        "abstract" : "Critical channel length for the backward scattering of the source-end velocity limit model. Default = 5.0 ¡Á 10^-9 in [m].",
+        "notice" : "A warning message will be issued when its value is less than 0 (too small), if VTL is given and the binned value of VTL is greater than zero. It will then be reset to zero."
+        },
+"igcmod":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "2",
+        "upper" : "2",
+        "default" : "2",
+        "abstract" : "Gate-to-channel tunneling current model selector. Default = 0. Optional values are 1 (long-channel zero-bias VTH0 to be used in the gate-and-channel tunneling current model computation) and 2 (the full-equation Vth model to be used in the gate-and-channel tunneling current model computation).",
+        "notice" : "IGCMOD = 1 and 2  turns on Igs , Igd , Igcs and Igcd."
+        },
+"igbmod":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "1",
+        "upper" : "1",
+        "default" : "1",
+        "abstract" : "Gate-to-substrate tunneling current model selector.Default = 0.",
+        "notice" : "IGBMOD = 1 turns on Igb."
+        },
+"nf":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "1",
+        "upper" : "Inf",
+        "default" : "1",
+        "abstract" : "Number of device fingers. Default = 1.",
+        "notice" : "Reset to 1 if  less than 1 with a warning to be issued."
+        },
+"aigbacc":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0",
+        "upper" : "2",
+        "default" : "9.49E-04",
+        "abstract" : "Parameter for Igb in accumulation. Default = 9.49e-4 in [(Fs^2/g)^0.5 m^-1].",
+        "notice" : ""
+        },
+"bigbacc":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0",
+        "upper" : "1",
+        "default" : "1.71E-03",
+        "abstract" : "Parameter for Igb in accumulation. Default = 1.71e-3 in [(Fs^2/g)^0.5 (mV)^-1].",
+        "notice" : ""
+        },
+"cigbacc":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0",
+        "upper" : "2",
+        "default" : "0.075",
+        "abstract" : "Parameter for Igb in accumulation. Default = 0.075 in [V^-1].",
+        "notice" : ""
+        },
+"nigbacc":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0",
+        "upper" : "5",
+        "default" : "1",
+        "abstract" : "Parameter for Igb in accumulation. Default = 1.0.",
+        "notice" : "Fatal errors to be issued if  its binned value is less than 0."
+        },
+"aigbinv":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0",
+        "upper" : "2",
+        "default" : "0.0111",
+        "abstract" : "Parameter for Igb in inversion. Default = 1.11e-2 in [(Fs^2/g)^0.5 m^-1].",
+        "notice" : ""
+        },
+"bigbinv":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0",
+        "upper" : "1",
+        "default" : "9.49E-04",
+        "abstract" : "Parameter for Igb in inversion. Default =  9.49e-4 in [(Fs^2/g)^0.5 (mV)^-1].",
+        "notice" : ""
+        },
+"cigbinv":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0",
+        "upper" : "1",
+        "default" : "0.006",
+        "abstract" : "Parameter for Igb in inversion. Default = 0.006 in [V^-1].",
+        "notice" : ""
+        },
+"eigbinv":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0",
+        "upper" : "10",
+        "default" : "1.1",
+        "abstract" : "Parameter for Igb in inversion. Default = 1.1 in [V].",
+        "notice" : ""
+        },
+"nigbinv":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0",
+        "upper" : "50",
+        "default" : "3",
+        "abstract" : "Parameter for Igb in inversion. Default = 3.0.",
+        "notice" : "Fatal errors to be issued if  its binned value is less than 0."
+        },
+"aigc":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0",
+        "upper" : "10",
+        "default" : "1.36E-02",
+        "abstract" : "Parameter for the Igcs and Igcd model. Default = 1.36e-2 for NMOS; 9.8e-3 for PMOS in [(Fs^2/g)^0.5 m^-1].",
+        "notice" : ""
+        },
+"bigc":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0",
+        "upper" : "10",
+        "default" : "1.71E-03",
+        "abstract" : "Parameter for the Igcs and Igcd model. Default = 1.71e-3 for NMOS; 7.59e-4 for PMOS in [(Fs^2/g)^0.5 (mV)^-1].",
+        "notice" : ""
+        },
+"cigc":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0",
+        "upper" : "10",
+        "default" : "0.075",
+        "abstract" : "Parameter for the Igcs and Igcd model. Default = 0.075 for NMOS; 0.03 for PMOS  in [V^-1].",
+        "notice" : ""
+        },
+"aigsd":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0",
+        "upper" : "10",
+        "default" : "1.36E-02",
+        "abstract" : "Parameter for the Igs and Igd model. Default = 1.36e-2 for NMOS; 9.8e-3 for PMOS in [(Fs^2/g)^0.5 m^-1].",
+        "notice" : ""
+        },
+"bigsd":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0",
+        "upper" : "10",
+        "default" : "1.71E-03",
+        "abstract" : "Parameter for the Igs and Igd model. Default = 1.71e-3 for NMOS; 7.59e-4 for PMOS in [(Fs^2/g)^0.5 (mV)^-1].",
+        "notice" : ""
+        },
+"cigsd":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0",
+        "upper" : "10",
+        "default" : "0.075",
+        "abstract" : "Parameter for the Igs and Igd model. Default = 0.075 for NMOS; 0.03 for PMOS  in [V^-1].",
+        "notice" : ""
+        },
+"vfbsdoff":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "0",
+        "abstract" : "offset flat-band voltage for the source and drain diffusion regions. Default = 0.0 in [V].",
+        "notice" : ""
+        },
+"tvfbsdoff":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "-Inf",
+        "upper" : "Inf",
+        "default" : "0",
+        "abstract" : "Temperature coefficient of VFBSDOFF. Default = 0.0 in [K^-1].  ",
+        "notice" : ""
+        },
+"dlcig":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "1.00E-07",
+        "default" : "0",
+        "abstract" : "Source and drain overlap length for the Igs and Igd models. Default = LINT in [meter].",
+        "notice" : ""
+        },
+"nigc":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0",
+        "upper" : "10",
+        "default" : "1",
+        "abstract" : "Parameter for the Igs, Igd, Igcs, and Igcd models. Default = 1.0.",
+        "notice" : "Fatal errors to be issued if  its binned value is less than 0."
+        },
+"poxedge":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0",
+        "upper" : "100",
+        "default" : "1",
+        "abstract" : "Factor for the gate oxide thickness in source/drain overlap regions. Default = 1.0.",
+        "notice" : "Fatal errors to be issued if  its binned value is less than 0."
+        },
+"pigcd":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0",
+        "upper" : "100",
+        "default" : "1",
+        "abstract" : "Gate-and-channel tunneling current Igc partitioning parameter. Default = 1.0.",
+        "notice" : "Fatal errors to be issued if  its binned value is less than 0."
+        },
+"ntox":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0",
+        "upper" : "10",
+        "default" : "1",
+        "abstract" : "Exponent for the gate oxide ratio. Default = 1.0.",
+        "notice" : ""
+        },
+"alpha0":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "-1",
+        "upper" : "1",
+        "default" : "0",
+        "abstract" : "First parameter of impact ionization current. Default = 0.0 in [meter/V].",
+        "notice" : ""
+        },
+"alpha1":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "-100",
+        "upper" : "100",
+        "default" : "0",
+        "abstract" : "Channel length scaling parameter of impact ionization current. Default = 0.0 in [V^-1].",
+        "notice" : ""
+        },
+"beta0":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0",
+        "upper" : "1000",
+        "default" : "0",
+        "abstract" : "First Vds dependent parameter of impact ionization current. Default = 0.0 in [V].",
+        "notice" : ""
+        },
+"agidl":
+        {
+        "binable" : "1",
+        "binType" : "2",
+        "lower" : "0",
+        "upper" : "0.1",
+        "default" : "0",
+        "abstract" : "Pre-exponential coefficient for GIDL. Default = 0.0 in [mho].",
+        "notice" : "If not positive, IGIDL will not be computed."
+        },
+"agisl":
+        {
+        "binable" : "1",
+        "binType" : "2",
+        "lower" : "0",
+        "upper" : "0.1",
+        "default" : "0",
+        "abstract" : "Pre-exponential coefficient for GISL. Default = AGIDL if AGIDL is given; otherwise is set to 0.0 in [mho].",
+        "notice" : "If not positive, IGISL will not be computed."
+        },
+"bgidl":
+        {
+        "binable" : "1",
+        "binType" : "2",
+        "lower" : "0",
+        "upper" : "1.00E+11",
+        "default" : "2.30E+09",
+        "abstract" : "Exponential coefficient for GIDL. Default = 2.3 ¡Á 10^9 in [V/m].",
+        "notice" : "If not positive, IGIDL will not be computed."
+        },
+"bgisl":
+        {
+        "binable" : "1",
+        "binType" : "2",
+        "lower" : "0",
+        "upper" : "1.00E+11",
+        "default" : "2.30E+09",
+        "abstract" : "Exponential coefficient for GISL. Default = BGIDL if BGIDL is given; otherwise it is set to 2.3 ¡Á 10^9 in [V/m].",
+        "notice" : "If not positive, IGISL will not be computed."
+        },
+"cgidl":
+        {
+        "binable" : "1",
+        "binType" : "2",
+        "lower" : "0.1",
+        "upper" : "50",
+        "default" : "0.5",
+        "abstract" : "Paramter for body-bias effect on GIDL. Default = 0.5 in [V^3].",
+        "notice" : "If not positive, IGIDL will not be computed."
+        },
+"cgisl":
+        {
+        "binable" : "1",
+        "binType" : "2",
+        "lower" : "0.1",
+        "upper" : "50",
+        "default" : "0.5",
+        "abstract" : "Paramter for body-bias effect on GISL. Default = CGISL if CGISL is given; otherwise it is set to 0.5 in [V^3].",
+        "notice" : "If not positive, IGISL will not be computed."
+        },
+"egidl":
+        {
+        "binable" : "1",
+        "binType" : "2",
+        "lower" : "0",
+        "upper" : "2",
+        "default" : "0.8",
+        "abstract" : "Fitting parameter for band bending for GIDL. Default = 0.8 in [V].",
+        "notice" : ""
+        },
+"egisl":
+        {
+        "binable" : "1",
+        "binType" : "2",
+        "lower" : "0",
+        "upper" : "2",
+        "default" : "0.8",
+        "abstract" : "Fitting parameter for band bending for GISL. Default = EGISL if EGISL is given; otherwise, it is set to 0.8 in [V].",
+        "notice" : ""
+        },
+"capmod":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "2",
+        "upper" : "2",
+        "default" : "2",
+        "abstract" : "Charge and capacitance model selector. Default = 2. The other optional values are 0 and 1.",
+        "notice" : ""
+        },
+"xpart":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "0",
+        "default" : "0",
+        "abstract" : "Channel charge partitioning selector. Default = 0.0 (the 40/60 partition). The other optional values are 0.5 (50/50) and 1.0 (0/100).",
+        "notice" : "If it is set less than 0 (a very rare or mistaken setting), no intrinsic charge and capacitance model will be evaluated."
+        },
+"cvchargemod":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "0",
+        "default" : "0",
+        "abstract" : "Vgsteff model selector for CAPMOD = 1 and 2. Default = 0. The other optional value is a non-zero value, such as 1.",
+        "notice" : "The default uses a simple Vgsteff ."
+        },
+"acde":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0.1",
+        "upper" : "1.6",
+        "default" : "1",
+        "abstract" : "Exponential coefficient for charge thickness in CAPMOD=2 for accumulation and depletion regions. Default = 1.0.",
+        "notice" : "Warning messages to be issued if its binned value is either less than 0.1 or great than 1.6."
+        },
+"ados":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "1",
+        "abstract" : "Inversion charge thickness parameter to account for the density of states, used in both the DC channel current and the CAPMOD = 2. Default = 1.0.",
+        "notice" : ""
+        },
+"bdos":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "1",
+        "abstract" : "Inversion charge thickness power parameter to account for the density of states, used in both the DC channel current and the CAPMOD = 2. Default = 1.0.",
+        "notice" : ""
+        },
+"noff":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0.1",
+        "upper" : "4",
+        "default" : "1",
+        "abstract" : "CV parameter in Vgsteff,CV for weak to strong inversion. Default = 1.0.",
+        "notice" : ""
+        },
+"voffcv":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "-0.5",
+        "upper" : "1",
+        "default" : "0",
+        "abstract" : "Offset voltage parameter to shift CV curves with respect to the gate voltage for CAPMOD = 1 and 2. Default = 0.0.",
+        "notice" : ""
+        },
+"voffcvl":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "-1.00E-05",
+        "upper" : "1.00E-05",
+        "default" : "0",
+        "abstract" : "Length-dependence parameter for the offset voltage VOFFCV. Default = 0.0.",
+        "notice" : ""
+        },
+"vfbcv":
+        {
+        "binable" : "1",
+        "binType" : "3",
+        "lower" : "-Inf",
+        "upper" : "Inf",
+        "default" : "-1",
+        "abstract" : "Flat-band voltage parameter (for CAPMOD=0 only). Default = -1.0[V]",
+        "notice" : ""
+        },
+"minvcv":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "-1.5",
+        "upper" : "1.5",
+        "default" : "0",
+        "abstract" : "Parameter to adjust the CV curvature in the moderate inversion region of CAPMOD = 1 and 2. It is activated if CVCHARGEMOD is not zero. Default = 0.0.",
+        "notice" : ""
+        },
+"moin":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "5",
+        "upper" : "25",
+        "default" : "15",
+        "abstract" : "Coefficient for the gate-bias dependent surface potential in CAPMOD = 2. It is used for more accurate modeling of the moderate inversion region. Default = 15.0.",
+        "notice" : "If its binned value is less than 5 or greater than 25, a warning message will be issued."
+        },
+"clc":
+        {
+        "binable" : "1",
+        "binType" : "3",
+        "lower" : "1.00E-18",
+        "upper" : "1.00E-18",
+        "default" : "1.00E-18",
+        "abstract" : "Length-dependence coefficient parameter of the bulk charge effect parameter Abulk_CV. Default = 0.1 ¡Á 10^-6 in [m].",
+        "notice" : "If the binned value is negative, a fatal message will be issued."
+        },
+"cle":
+        {
+        "binable" : "1",
+        "binType" : "3",
+        "lower" : "0.6",
+        "upper" : "0.6",
+        "default" : "0.6",
+        "abstract" : "Length-dependence coefficient parameter of the bulk charge effect parameter Abulk_CV. Default = 0.6.",
+        "notice" : ""
+        },
+"cf":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0",
+        "upper" : "1.00E-10",
+        "default" : "0",
+        "abstract" : "Outer fringing capacitance per unit width. Default = Computed if not given in [Farad per meter].",
+        "notice" : ""
+        },
+"cgdo":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "1.00E-09",
+        "default" : "0",
+        "abstract" : "Non LDD region drain-gate overlap capacitance per unit channel width. Default: Refer to the text for various possible scenarios.",
+        "notice" : ""
+        },
+"cgso":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "1.00E-09",
+        "default" : "0",
+        "abstract" : "Non LDD region source-gate overlap capacitance per unit channel width. Default: Refer to the text for various possible scenarios.",
+        "notice" : ""
+        },
+"cgbo":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "1.00E-09",
+        "default" : "0",
+        "abstract" : "Gate-bulk overlap capacitance per unit channel length. Default: Refer to the text for various possible scenarios.",
+        "notice" : ""
+        },
+"cgdl":
+        {
+        "binable" : "1",
+        "binType" : "3",
+        "lower" : "0",
+        "upper" : "1.00E-09",
+        "default" : "0",
+        "abstract" : "Overlap capacitance between gate and lightly-doped drain region. Default = 0.0 in [Farad/m].",
+        "notice" : ""
+        },
+"cgsl":
+        {
+        "binable" : "1",
+        "binType" : "3",
+        "lower" : "0",
+        "upper" : "1.00E-09",
+        "default" : "0",
+        "abstract" : "Overlap capacitance between gate and lightly-doped source region. Default = 0.0 in [Farad/m].",
+        "notice" : ""
+        },
+"ckappas":
+        {
+        "binable" : "1",
+        "binType" : "3",
+        "lower" : "0.02",
+        "upper" : "Inf",
+        "default" : "0.6",
+        "abstract" : "Coefficient of bias-dependent overlap capacitance for the source side. Default = 0.6 in [V].",
+        "notice" : "If its binned value is less than 0.02, a warning message will be issued and it is reset to 0.02."
+        },
+"ckappad":
+        {
+        "binable" : "1",
+        "binType" : "3",
+        "lower" : "0.02",
+        "upper" : "Inf",
+        "default" : "0.6",
+        "abstract" : "Coefficient of bias-dependent overlap capacitance for the drain side. Default = CKAPPAS in [V].",
+        "notice" : "If its binned value is less than 0.02, a warning message will be issued and it is reset to 0.02."
+        },
+"rgatemod":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "0",
+        "default" : "0",
+        "abstract" : "Gate resistance model selector. Default = 0; No gate resistance is to be generated. Other optional values are 1, 2, or 3.",
+        "notice" : ""
+        },
+"rbodymod":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "0",
+        "default" : "0",
+        "abstract" : "Body-resistance network model selector. Default = 0;  No network is to be generated. Other optional values are 1 or 2.",
+        "notice" : ""
+        },
+"trnqsmod":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "0",
+        "default" : "0",
+        "abstract" : "Charge-deficit transient NQS model selector. Default = 0; Charge-deficit transient NQS model is turned off. Other optional value is 1 (turned on).",
+        "notice" : "When TRNQSMOD is set to 1, do not make RGATEMOD equal to 2 or 3; vice versa."
+        },
+"acnqsmod":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "0",
+        "default" : "0",
+        "abstract" : "Charge-deficit AC NQS model selector. Default = 0; Charge-deficit AC NQS model is turned off. Other optional value is 1 (turned on).",
+        "notice" : "When ACNQSMOD is set to 1, do not make RGATEMOD equal to 2 or 3; vice versa."
+        },
+"rshg":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "1.00E+04",
+        "default" : "0.1",
+        "abstract" : "Poly-silicon gate sheet resistance. Default = 0.1 [ohm].",
+        "notice" : "If RSHG <= 0, a warning will be issued."
+        },
+"ngcon":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "1",
+        "upper" : "2",
+        "default" : "1",
+        "abstract" : "Poly-silicon gate contact type selector. Default = 1; Gate contact made only on one side of the gate. Other optional value is 2 (two-sided contact).",
+        "notice" : "If NGCON is less than 1, a fatal error will be issued."
+        },
+"xgw":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "0",
+        "abstract" : "Distance from the gate contact to the device edge. Default = 0.0 [m].",
+        "notice" : ""
+        },
+"xgl":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "0",
+        "abstract" : "The offset between the actual poly-silicon gate (not the channel) length and the designed length of the poly-silicon gate. Default = 0.0 [m].",
+        "notice" : "If (Ldrawn + XL) < XGL, a fatal error will be issued."
+        },
+"xrcrg1":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "12",
+        "abstract" : "The intrinsic-input gate resistance R_g,ii fitting parameter for both drift and diffusion components. Default = 12.0.",
+        "notice" : "If XRCRG1 < 0, a warning will be given."
+        },
+"xrcrg2":
+        {
+        "binable" : "1",
+        "binType" : "1",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "1",
+        "abstract" : "The intrinsic-input gate resistance R_g,ii fitting parameter for the diffusion component only when Vgs is close to or less than Vth. Default = 1.0.",
+        "notice" : ""
+        },
+"gbmin":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "1.00E-20",
+        "upper" : "Inf",
+        "default" : "1.00E-12",
+        "abstract" : "The minimum conductance set for each body-resistance network branch to prevent too high resistances that would otherwise make convergence difficult. Default = 10^-12 [mho].",
+        "notice" : "If it is less than 10^-20 mho, a warning will be given."
+        },
+"rbpd":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "50",
+        "abstract" : "The body resistance component connecting sbNodePrime and dbNode. Default = 50.0 [ohm].",
+        "notice" : "Used for RBODYMOD = 1 only."
+        },
+"rbps":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "50",
+        "abstract" : "The body resistance component connecting sbNodePrime and sbNode. Default = 50.0 [ohm].",
+        "notice" : "Used for RBODYMOD = 1 only."
+        },
+"rbpb":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "50",
+        "abstract" : "The body resistance component connecting sbNodePrime and bNode. Default = 50.0 [ohm].",
+        "notice" : "Used for RBODYMOD = 1 only."
+        },
+"rbdb":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "50",
+        "abstract" : "The body resistance component connecting dbNode and bNode. Default = 50.0 [ohm].",
+        "notice" : "Used for RBODYMOD = 1 only."
+        },
+"rbsb":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "50",
+        "abstract" : "The body resistance component connecting sbNode and bNode. Default = 50.0 [ohm].",
+        "notice" : "Used for RBODYMOD = 1 only."
+        },
+"rbpd0":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "50",
+        "abstract" : "Scaling prefactor for RBPD . Default = 50.0 [ohm].",
+        "notice" : "Used for 3-R and 5-R options of RBODYMOD = 2 only."
+        },
+"rbpdl":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "0",
+        "abstract" : "Length Scaling parameter for RBPD. Default = 0.0 [ohm]. ",
+        "notice" : "Used for 3-R and 5-R options of RBODYMOD = 2 only."
+        },
+"rbpdw":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "0",
+        "abstract" : "Width Scaling parameter for RBPD. Default = 0.0 [ohm].",
+        "notice" : "Used for 3-R and 5-R options of RBODYMOD = 2 only."
+        },
+"rbpdnf":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "0",
+        "abstract" : "Number of fingers Scaling parameter for RBPD. Default = 0.0 [ohm].",
+        "notice" : "Used for 3-R and 5-R options of RBODYMOD = 2 only."
+        },
+"rbps0":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "50",
+        "abstract" : "Scaling prefactor for RBPS. Default = 50.0 [ohm].",
+        "notice" : "Used for 3-R and 5-R options of RBODYMOD = 2 only."
+        },
+"rbpsl":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "0",
+        "abstract" : "Length Scaling parameter for RBPS. Default = 0.0 [ohm].",
+        "notice" : "Used for 3-R and 5-R options of RBODYMOD = 2 only."
+        },
+"rbpsw":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "0",
+        "abstract" : "Width Scaling parameter for RBPS. Default = 0.0 [ohm].",
+        "notice" : "Used for 3-R and 5-R options of RBODYMOD = 2 only."
+        },
+"rbpsnf":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "0",
+        "abstract" : "Number of fingers Scaling parameter for RBPS. Default = 0.0 [ohm].",
+        "notice" : "Used for 3-R and 5-R options of RBODYMOD = 2 only."
+        },
+"rbpbx0":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "100",
+        "abstract" : "Scaling prefactor for RBPBX. Default = 100.0 [ohm].",
+        "notice" : "Used for 1-R, 3-R and 5-R options of RBODYMOD = 2 only."
+        },
+"rbpbxl":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "0",
+        "abstract" : "Length Scaling parameter forRBPBX. Default = 0.0 [ohm].",
+        "notice" : "Used for 1-R, 3-R and 5-R options of RBODYMOD = 3 only."
+        },
+"rbpbxw":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "0",
+        "abstract" : "Width Scaling parameter for RBPBX. Default = 0.0 [ohm].",
+        "notice" : "Used for 1-R, 3-R and 5-R options of RBODYMOD = 4 only."
+        },
+"rbpbxnf":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "0",
+        "abstract" : "Number of fingers Scaling parameter for RBPBX. Default = 0.0 [ohm].",
+        "notice" : "Used for 1-R, 3-R and 5-R options of RBODYMOD = 5 only."
+        },
+"rbpby0":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "100",
+        "abstract" : "Scaling prefactor for RBPBY. Default = 100.0 [ohm].",
+        "notice" : "Used for 1-R, 3-R and 5-R options of RBODYMOD = 6 only."
+        },
+"rbpbyl":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "0",
+        "abstract" : "Length Scaling parameter forRBPBY. Default = 0.0 [ohm].",
+        "notice" : "Used for 1-R, 3-R and 5-R options of RBODYMOD = 7 only."
+        },
+"rbpbyw":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "0",
+        "abstract" : "Width Scaling parameter for RBPBY. Default = 0.0 [ohm].",
+        "notice" : "Used for 1-R, 3-R and 5-R options of RBODYMOD = 8 only."
+        },
+"rbpbynf":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "0",
+        "abstract" : "Number of fingers Scaling parameter for RBPBY. Default = 0.0 [ohm].",
+        "notice" : "Used for 1-R, 3-R and 5-R options of RBODYMOD = 2 only."
+        },
+"rbdbx0":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "100",
+        "abstract" : "Scaling prefactor for RBDBX. Default = 100.0 [ohm].",
+        "notice" : "Used for the 5-R option of RBODYMOD = 2 only."
+        },
+"rbdby0":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "100",
+        "abstract" : "Scaling prefactor for RBDBY. Default = 100.0 [ohm].",
+        "notice" : "Used for the 5-R option of RBODYMOD = 2 only."
+        },
+"rbsbx0":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "100",
+        "abstract" : "Scaling prefactor for RBSBX. Default = 100.0 [ohm].",
+        "notice" : "Used for the 5-R option of RBODYMOD = 3 only."
+        },
+"rbsby0":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "100",
+        "abstract" : "Scaling prefactor for RBSBY. Default = 100.0 [ohm].",
+        "notice" : "Used for the 5-R option of RBODYMOD = 4 only."
+        },
+"rbsdbxl":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "0",
+        "abstract" : "Length Scaling parameter for RBSBX and RBDBX. Default = 0.0 [ohm].",
+        "notice" : "Used for the 5-R option of RBODYMOD = 5 only."
+        },
+"rbsdbxw":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "0",
+        "abstract" : "Width Scaling parameter for RBSBX and RBDBX. Default = 0.0 [ohm].",
+        "notice" : "Used for the 5-R option of RBODYMOD = 6 only."
+        },
+"rbsdbxnf":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "0",
+        "abstract" : "Number of fingers Scaling parameter for RBSBX and RBDBX. Default = 0.0 [ohm].",
+        "notice" : "Used for the 5-R option of RBODYMOD = 7 only."
+        },
+"rbsdbyl":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "0",
+        "abstract" : "Length Scaling parameter for RBSBY and RBDBY. Default = 0.0 [ohm].",
+        "notice" : "Used for the 5-R option of RBODYMOD = 8 only."
+        },
+"rbsdbyw":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "0",
+        "abstract" : "Width Scaling parameter for RBSBY and RBDBY. Default = 0.0 [ohm].",
+        "notice" : "Used for the 5-R option of RBODYMOD = 9 only."
+        },
+"rbsdbynf":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "0",
+        "abstract" : "Number of fingers Scaling parameter for RBSBY and RBDBY. Default = 0.0 [ohm].",
+        "notice" : "Used for the 5-R option of RBODYMOD = 10 only."
+        },
+"fnoimod":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "1",
+        "upper" : "1",
+        "default" : "1",
+        "abstract" : "Flicker noise model selector. Default = 1. The other optional value is 0.",
+        "notice" : ""
+        },
+"tnoimod":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "0",
+        "default" : "0",
+        "abstract" : "Thermal noise model selector. Default = 0.",
+        "notice" : ""
+        },
+"kf":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "3",
+        "default" : "1",
+        "abstract" : "The FNOIMOD = 0 flicker noise coefficient. Default = 1.0 in [A^(2-AF) ¡Á s^(1-EF) ¡Á Farad].",
+        "notice" : ""
+        },
+"af":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "3",
+        "default" : "1",
+        "abstract" : "The FNOIMOD = 0 flicker noise channel current exponent. Default = 1.0.",
+        "notice" : ""
+        },
+"ef":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "3",
+        "default" : "1",
+        "abstract" : "Flicker noise frequency exponent. Default = 1.0.",
+        "notice" : ""
+        },
+"noia":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "1.00E+45",
+        "default" : "6.25E+41",
+        "abstract" : "The FNOIMOD = 1 flicker noise equivalent trap density parameter A. Default = NMOS: 6.25 ¡Á 10^41 (eV )^-1 ¡Á s^(1-EF) ¡Á m^-3 ; PMOS: 6.188 ¡Á 10^40 (eV)^-1 ¡Á s^( 1-EF) ¡Á m^-3. ",
+        "notice" : ""
+        },
+"noib":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "1.00E+40",
+        "default" : "3.125E+26",
+        "abstract" : "The FNOIMOD = 1 flicker noise equivalent trap density parameter B. Default = NMOS: 3.125 ¡Á 10^26 (eV )^-1 ¡Á s^(1-EF) ¡Á m^-1 ; PMOS: 1.5 ¡Á 10^25 (eV)^-1 ¡Á s^( 1-EF) ¡Á m^-1. ",
+        "notice" : ""
+        },
+"noic":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "1.00E+18",
+        "default" : "8.75E+09",
+        "abstract" : "The FNOIMOD = 1 flicker noise equivalent trap density parameter C. Default = 8.75 ¡Á 10^9 in [(eV)^-1 ¡Á s^(1-EF) ¡Á m].",
+        "notice" : ""
+        },
+"em":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "1.00E+12",
+        "default" : "4.10E+07",
+        "abstract" : "Maximum channel electric field strength of the FNOIMOD = 1 flicker noise model. Default = 4.1 ¡Á 10^7 in [V ¡Á m^-1 ].",
+        "notice" : ""
+        },
+"lintnoi":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "-1.00E-05",
+        "upper" : "1.00E-05",
+        "default" : "0",
+        "abstract" : "The gate-to-source/drain overlap length for the FNOIMOD = 1 flicker noise model. Default = 0.0 in [m].",
+        "notice" : "Fatal error if it makes the effective channel  length negative for noise modeling and simulation."
+        },
+"ntnoi":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "1",
+        "abstract" : "Noise factor for short-channel devices for TNOIMOD=0 only. Default = 1.0.",
+        "notice" : "If negative, a warning will be issued and its value will be reset to 0."
+        },
+"rnoia":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "0.5164",
+        "abstract" : "Noise partitioning coefficient for the TNOIMOD = 1 channel thermal noise model. Default = 0.5164.",
+        "notice" : "If negative, a warning will be issued and its value will be reset to 0."
+        },
+"rnoib":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "0.577",
+        "abstract" : "Transconductance amplification coefficient for the TNOIMOD = 1 channel thermal noise model. Default = 0.577.",
+        "notice" : "If negative, a warning will be issued and its value will be reset to 0."
+        },
+"tnoia":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "1.50E+06",
+        "abstract" : "Bias and length dependence parameter for the TNOIMOD = 1 thermal noise model partitioning. Default = 1.5.",
+        "notice" : "If negative, a warning will be issued and its value will be reset to 0."
+        },
+"tnoib":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "3.50E+06",
+        "abstract" : "Bias and length dependence parameter for the noise transconductance amplification of the TNOIMOD = 1 thermal noise model. Default = 3.5.",
+        "notice" : "If negative, a warning will be issued and its value will be reset to 0."
+        },
+"geomod":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "0",
+        "default" : "0",
+        "abstract" : "Geometry-dependent parasitics model selector - specifying how the end S/D diffusions are connected. Default = 0; The end diffusions can either be an isolated source or an isolated drain, or both; NF can be an odd or even number. Other optional values are 1 through 10.",
+        "notice" : ""
+        },
+"permod":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "1",
+        "upper" : "1",
+        "default" : "1",
+        "abstract" : "Whether PS/PD (when given) includes the gate-edge perimeter. Default = 1; The BSIM4 source and drain perimeters PS and PD that are explicitly specified in element statements include the gate-edge perimeter components.",
+        "notice" : ""
+        },
+"rgeomod":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "1",
+        "upper" : "1",
+        "default" : "1",
+        "abstract" : "Source/drain diffusion resistance and contact model selector - specifying the end S/D contact type: point, wide or merged, and how S/D parasitics resistance is computed. Default = 0; No source and drain diffusion contact type is considered. Other optional values are 1 through 8.",
+        "notice" : ""
+        },
+"dmcg":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "1",
+        "default" : "0",
+        "abstract" : "Distance from S/D contact center to the gate edge. Default = 0.0 [m].",
+        "notice" : ""
+        },
+"dmcgt":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "1",
+        "default" : "0",
+        "abstract" : "DMCG of test device structures used in device characterization and model parameter extractions. Default = 0.0 [m].",
+        "notice" : ""
+        },
+"dmci":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "1",
+        "default" : "0",
+        "abstract" : "Distance from S/D contact center to the (STI) isolation edge in the channel-length direction. Default = DMCG [m].",
+        "notice" : ""
+        },
+"dmdg":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "1",
+        "default" : "0",
+        "abstract" : "Same as DMCG but for merged device only. Default = 0.0 [m].",
+        "notice" : ""
+        },
+"min":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "0",
+        "abstract" : "An integer flag to indicate whether the end diffusions are source or drain when the number of finger (NF) is even. Default = 0; the end diffusions serve as the source terminal.",
+        "notice" : ""
+        },
+"ps":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "0",
+        "abstract" : "The source junction perimeter. It is meant to include the gate-edge perimeter component when PERMOD = 1. The GEOMOD model will be used to compute the total effective source perimeter value when PS is not explicitly specified in element statements. Default = 0.0 [m].",
+        "notice" : "From BSIM4.5.0 onwards, a warning message will be issued if a negative PS is given. The effective source perimeter PSeff will then be set to zero regardless of the setting of PERMOD."
+        },
+"pd":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "0",
+        "abstract" : "The drain junction perimeter. It is meant to include the gate-edge perimeter component when PERMOD = 1. The GEOMOD model will be used to compute the total effective drain perimeter value when PD is not explicitly specified in element statements. Default = 0.0 [m].",
+        "notice" : "From BSIM4.5.0 onwards, a warning message will be issued if a negative PD is given. The effective source perimeter PDeff will then be set to zero regardless of the setting of PERMOD."
+        },
+"as":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "0",
+        "abstract" : "The source junction bottom area. The GEOMOD model will be used to compute the effective source bottom area value when AS is not explicitly specified in element statements. Default = 0.0 [m^2 ].",
+        "notice" : ""
+        },
+"ad":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "0",
+        "abstract" : "The drain junction bottom area. The GEOMOD model will be used to compute the effective drain bottom area value when AD is not explicitly specified in element statements. Default = 0.0 [m^2 ].",
+        "notice" : ""
+        },
+"rsh":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "1.00E+04",
+        "default" : "0",
+        "abstract" : "Source/drain sheet resistance. Default = 0.0 [ohm-square]. ",
+        "notice" : ""
+        },
+"nrs":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "1",
+        "abstract" : "Number of squares of the source diffusion region. Default = 1.0 [square].",
+        "notice" : ""
+        },
+"nrd":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "1",
+        "abstract" : "Number of squares of the drain diffusion region. Default = 1.0 [square].",
+        "notice" : ""
+        },
+"diomod":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "2",
+        "upper" : "2",
+        "default" : "2",
+        "abstract" : "Source/drain junction diode IV model selector. Default = 1. Other optional values are 0 and 2.",
+        "notice" : ""
+        },
+"njs":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0.8",
+        "upper" : "1.2",
+        "default" : "1",
+        "abstract" : "Emission coefficients (The non-ideality factor) of junction for source-bulk junctions. Default = 1.0.",
+        "notice" : "A warning to be issued if it is negative."
+        },
+"njd":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0.8",
+        "upper" : "1.2",
+        "default" : "1",
+        "abstract" : "Emission coefficients (The non-ideality factor) of junction for drain-bulk junctions. Default = NJS.",
+        "notice" : "A warning to be issued if it is negative."
+        },
+"xjbvs":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "100",
+        "default" : "1",
+        "abstract" : "Fitting parameter for source-bulk junction diode break-down. In the case of DIOMOD = 0. XJBVS will be reset to 1 if it is negative. XJBVS = 0 means no breakdown will be modeled. In the case of DIOMOD = 2, XJBVS will be reset to 1 if it is not positive. Default = 1.0.",
+        "notice" : ""
+        },
+"xjbvd":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "100",
+        "default" : "1",
+        "abstract" : "Fitting parameter for drain-bulk junction diode break-down. In the case of DIOMOD = 0. XJBVD will be reset to 1 if it is negative. XJBVD = 0 means no breakdown will be modeled. In the case of DIOMOD = 2, XJBVD will be reset to 1 if it is not positive. Default = XJBVS.",
+        "notice" : ""
+        },
+"bvs":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "1000",
+        "default" : "10",
+        "abstract" : "Source-bulk junction diode breakdown voltage. Default = 10.0 in [V].",
+        "notice" : "If BVS is not positive, it is reset to 10 V."
+        },
+"bvd":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "1000",
+        "default" : "10",
+        "abstract" : "Drain-bulk junction diode breakdown voltage. Default = BVS in [V].",
+        "notice" : "If BVD is not positive, it is reset to 10 V."
+        },
+"ijthsfwd":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "0.1",
+        "abstract" : "Limiting source junction current at which the source junction current equation is linearized for the forward body bias regime. Default = 0.1 in [A].",
+        "notice" : "If IJTHSFWD is not positive, it will be reset to 0.1 A."
+        },
+"ijthdfwd":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "0.1",
+        "abstract" : "Limiting drain junction current at which the drain junction current equation is linearized for the forward body bias regime. Default = IJTHSFWD in [A].",
+        "notice" : "If IJTHDFWD is not positive, it will be reset to 0.1 A."
+        },
+"ijthsrev":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "0.1",
+        "abstract" : "Limiting source junction current at which the source junction current equation is linearized for the reverse body bias regime. Default = 0.1 in [A].",
+        "notice" : "If IJTHSREV is not positive, it will be reset to 0.1 A."
+        },
+"ijthdrev":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "0.1",
+        "abstract" : "Limiting drain junction current at which the drain junction current equation is linearized for the reverse body bias regime.Default = IJTHSREV in [A].",
+        "notice" : "If IJTHDREV is not positive, it will be reset to 0.1 A."
+        },
+"vtss":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "10",
+        "abstract" : "Source junction bottom trap-assisted voltage dependent parameter. Default = 10.0 in [V].",
+        "notice" : "Fatal error to be issued if it is negative."
+        },
+"vtsd":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "10",
+        "abstract" : "Drain junction bottom trap-assisted voltage dependent parameter. Default = VTSS in [V].",
+        "notice" : "Fatal error to be issued if it is negative."
+        },
+"vtssws":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "10",
+        "abstract" : "Source STI sidewall trap-assisted voltage dependent parameter. Default = 10.0 in [V].",
+        "notice" : "Fatal error to be issued if it is negative."
+        },
+"vtsswd":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "10",
+        "abstract" : "Drain STI sidewall trap-assisted voltage dependent parameter. Default = VTSSWS in [V].",
+        "notice" : "Fatal error to be issued if it is negative."
+        },
+"vtsswgs":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "10",
+        "abstract" : "Source gate-edge sidewall trap-assisted voltage dependent parameter. Default = 10.0 in [V].",
+        "notice" : "Fatal error to be issued if it is negative."
+        },
+"vtsswgd":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "Inf",
+        "default" : "10",
+        "abstract" : "Drain gate-edge sidewall trap-assisted voltage dependent parameter. Default = VTSSWGS in [V].",
+        "notice" : "Fatal error to be issued if it is negative."
+        },
+"jss":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "0.001",
+        "default" : "1.00E-04",
+        "abstract" : "Saturation current density of the source junction bottom at TNOM. Default = 1.0e-4 in [A/m^2 ].",
+        "notice" : ""
+        },
+"jsd":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "0.001",
+        "default" : "1.00E-04",
+        "abstract" : "Saturation current density of the drain  junction bottom at TNOM. Default = JSS in [A/m^2 ].",
+        "notice" : ""
+        },
+"jsws":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "1.00E-06",
+        "default" : "0",
+        "abstract" : "Saturation current density of the source STI sidewall junction at TNOM. Default = 0.0 in [A/m].",
+        "notice" : ""
+        },
+"jswd":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "1.00E-06",
+        "default" : "0",
+        "abstract" : "Saturation current density of the drain STI sidewall junction at TNOM. Default = JSWS in [A/m].",
+        "notice" : ""
+        },
+"jswgs":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "1.00E-06",
+        "default" : "0",
+        "abstract" : "Saturation current density of the source gate-edge junction at TNOM. Default = 0.0 in [A/m].",
+        "notice" : ""
+        },
+"jswgd":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "1.00E-06",
+        "default" : "0",
+        "abstract" : "Saturation current density of the drain gate-edge junction at TNOM. Default = JSWGS in [A/m].",
+        "notice" : ""
+        },
+"xtis":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "2.5",
+        "upper" : "5",
+        "default" : "3",
+        "abstract" : "Exponent of the temperature dependence of the source-bulk junction saturation current density. Default = 3.0.",
+        "notice" : ""
+        },
+"xtid":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "2.5",
+        "upper" : "5",
+        "default" : "3",
+        "abstract" : "Exponent of the temperature dependence of the drain-bulk junction saturation current density. Default = XTIS.",
+        "notice" : ""
+        },
+"mjs":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "0.95",
+        "default" : "0.5",
+        "abstract" : "Source-bulk bottom junction grading coefficient for depletion capacitance model. Default = 0.5.",
+        "notice" : "A warning to be issued if it is greater than or equal to 0.99; reset to 0.99 if it is greater than 0.99 for numerical stability."
+        },
+"mjd":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "0.95",
+        "default" : "0.5",
+        "abstract" : "Drain-bulk bottom junction grading coefficient for depletion capacitance model. Default = MJS.",
+        "notice" : "A warning to be issued if it is greater than or equal to 0.99; reset to 0.99 if it is greater than 0.99 for numerical stability."
+        },
+"mjsws":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "0.95",
+        "default" : "0.33",
+        "abstract" : "Source-bulk STI sidewall junction grading coefficient for depletion capacitance model. Default = 0.33.",
+        "notice" : "A warning to be issued if it is greater than or equal to 0.99; reset to 0.99 if it is greater than 0.99 for numerical stability."
+        },
+"mjswd":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "0.95",
+        "default" : "0.33",
+        "abstract" : "Drain-bulk STI sidewall junction grading coefficient for depletion capacitance model. Default = MJSWS.",
+        "notice" : "A warning to be issued if it is greater than or equal to 0.99; reset to 0.99 if it is greater than 0.99 for numerical stability."
+        },
+"mjswgs":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "0.95",
+        "default" : "0.33",
+        "abstract" : "Source-bulk gate-edge junction grading coefficient for depletion capacitance model. Default = MJSWS.",
+        "notice" : "A warning to be issued if it is greater than or equal to 0.99; reset to 0.99 if it is greater than 0.99 for numerical stability."
+        },
+"mjswgd":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "0.95",
+        "default" : "0.33",
+        "abstract" : "Drain-bulk gate-edge junction grading coefficient for depletion capacitance model. Default = MJSWGS.",
+        "notice" : "A warning to be issued if it is greater than or equal to 0.99; reset to 0.99 if it is greater than 0.99 for numerical stability."
+        },
+"jtss":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "1.00E-06",
+        "default" : "0",
+        "abstract" : "Trap-assisted tunneling saturation current density of the source-bulk junction bottom at TNOM. Default = 0.0 in [A/m^2 ].",
+        "notice" : ""
+        },
+"xtss":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "1",
+        "default" : "0.02",
+        "abstract" : "Power dependence of JTSS on temperature. Default = 0.02.",
+        "notice" : ""
+        },
+"jtsd":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "1.00E-06",
+        "default" : "0",
+        "abstract" : "Trap-assisted tunneling saturation current density of the drain-bulk junction bottom at TNOM. Default = JTSS in [A/m^2 ].",
+        "notice" : ""
+        },
+"xtsd":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "1",
+        "default" : "0.02",
+        "abstract" : "Power dependence of JTSD on temperature. Default = XTSS.",
+        "notice" : ""
+        },
+"jtssws":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "1.00E-06",
+        "default" : "0",
+        "abstract" : "Source-bulk STI sidewall trap-assisted saturation current density at TNOM. Default = 0.0 in [A/m].",
+        "notice" : ""
+        },
+"xtssws":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "1",
+        "default" : "0.02",
+        "abstract" : "Power dependence of JTSSWS on temperature. Default = 0.02.",
+        "notice" : ""
+        },
+"jtsswd":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "1.00E-06",
+        "default" : "0",
+        "abstract" : "Drain-bulk STI sidewall trap-assisted saturation current density at TNOM. Default = JTSSWS in [A/m].",
+        "notice" : ""
+        },
+"xtsswd":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "1",
+        "default" : "0.02",
+        "abstract" : "Power dependence of JTSSWD on temperature. Default = XTSSWS.",
+        "notice" : ""
+        },
+"jtsswgs":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "1.00E-05",
+        "default" : "0",
+        "abstract" : "Source-bulk gate-edge sidewall trap-assisted saturation current density. Default = 0.0 in [A/m].",
+        "notice" : ""
+        },
+"xtsswgs":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "1",
+        "default" : "0.02",
+        "abstract" : "Power dependence of JTSSWGS on temperature. Default = 0.02.",
+        "notice" : ""
+        },
+"jtsswgd":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "1.00E-05",
+        "default" : "0",
+        "abstract" : "Drain-bulk gate-edge sidewall trap-assisted saturation current density. Default = JTSSWGS in [A/m].",
+        "notice" : ""
+        },
+"xtsswgd":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "1",
+        "default" : "0.02",
+        "abstract" : "Power dependence of JTSSWGD on temperature. Default = XTSSWGS.",
+        "notice" : ""
+        },
+"njts":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "100",
+        "default" : "20",
+        "abstract" : "Non-ideality factor for JTSS. Default = 20.0.",
+        "notice" : "A warning to be issued if it makes the temperature-dependent NJS_TAT(T) negative."
+        },
+"njtsd":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "100",
+        "default" : "20",
+        "abstract" : "Non-ideality factor for JTSD. Default = NJTS.",
+        "notice" : "A warning to be issued if it makes the temperature-dependent NJD_TAT(T) negative."
+        },
+"njtssw":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "100",
+        "default" : "20",
+        "abstract" : "Non-ideality factor for JTSSWS. Default = 20.0.",
+        "notice" : "A warning to be issued if it makes the temperature-dependent NJSSW_TAT(T) negative."
+        },
+"njtsswd":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "100",
+        "default" : "20",
+        "abstract" : "Non-ideality factor for JTSSWD. Default = NJTSSW.",
+        "notice" : "A warning to be issued if it makes the temperature-dependent NJSSW_TAT(T) negative."
+        },
+"njtsswg":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "100",
+        "default" : "20",
+        "abstract" : "Non-ideality factor forJTSSWGS. Default = 20.0.",
+        "notice" : "A warning to be issued if it makes the temperature-dependent NJSSWG_TAT(T) negative."
+        },
+"njtsswgd":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "100",
+        "default" : "20",
+        "abstract" : "Non-ideality factor for JTSSWGD. Default = NJTSSWG.",
+        "notice" : "A warning to be issued if it makes the temperature-dependent NJSSWG_TAT(T) negative."
+        },
+"tnjts":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "1",
+        "default" : "0",
+        "abstract" : "Temperature-dependence coefficient of NJTS. Default = 0.0.",
+        "notice" : "A warning to be issued if it makes the temperature-dependent NJS_TAT(T) negative."
+        },
+"tnjtsd":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "1",
+        "default" : "0",
+        "abstract" : "Temperature-dependence coefficient of NJTSD. Default = TNJTS.",
+        "notice" : "A warning to be issued if it makes the temperature-dependent NJD_TAT(T) negative."
+        },
+"tnjtssw":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "1",
+        "default" : "0",
+        "abstract" : "Temperature-dependence coefficient of NJTSSW. Default = 0.0.",
+        "notice" : "A warning to be issued if it makes the temperature-dependent NJSSW_TAT(T) negative."
+        },
+"tnjtsswd":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "1",
+        "default" : "0",
+        "abstract" : "Temperature-dependence coefficient of NJTSSWD. Default = TNJTSSW.",
+        "notice" : "A warning to be issued if it makes the temperature-dependent NJSSW_TAT(T) negative."
+        },
+"tnjtsswg":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "1",
+        "default" : "0",
+        "abstract" : "Temperature-dependence coefficient of NJTSSWG. Default = 0.0.",
+        "notice" : "A warning to be issued if it makes the temperature-dependent NJSSWG_TAT(T) negative."
+        },
+"tnjtsswgd":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "1",
+        "default" : "0",
+        "abstract" : "Temperature-dependence coefficient of NJTSSWGD. Default = TNJTSSWG.",
+        "notice" : "A warning to be issued if it makes the temperature-dependent NJSSWG_TAT(T) negative."
+        },
+"cjs":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "0.001",
+        "default" : "5.00E-04",
+        "abstract" : "Source-bulk bottom junction capacitance per unit area at zero bias at TNOM. Default = 5.0 ¡Á 10^4 in [Farad/m^2 ].",
+        "notice" : ""
+        },
+"cjd":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "0.001",
+        "default" : "5.00E-04",
+        "abstract" : "Drain-bulk bottom junction capacitance per unit area at zero bias at TNOM. Default = CJS in [Farad/m^2 ].",
+        "notice" : ""
+        },
+"cjsws":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "1.00E-09",
+        "default" : "5.00E-10",
+        "abstract" : "Source-bulk STI sidewall junction capacitance per unit length at zero bias at TNOM. Default = 5.0 ¡Á 10^-10 in [Farad/m].",
+        "notice" : ""
+        },
+"cjswd":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "1.00E-09",
+        "default" : "5.00E-10",
+        "abstract" : "Drain-bulk STI sidewall junction capacitance per unit length at zero bias at TNOM. Default = CJSWS in [Farad/m].",
+        "notice" : ""
+        },
+"cjswgs":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "1.00E-09",
+        "default" : "5.00E-10",
+        "abstract" : "Source-bulk gate-edge sidewall junction capacitance per unit length at zero bias at TNOM. Default = CJSWS in [Farad/m].",
+        "notice" : ""
+        },
+"cjswgd":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "0",
+        "upper" : "1.00E-09",
+        "default" : "5.00E-10",
+        "abstract" : "Drain-bulk gate-edge sidewall junction capacitance per unit length at zero bias at TNOM. Default = CJSWGS in [Farad/m].",
+        "notice" : ""
+        },
+"pbs":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "1.00E-05",
+        "upper" : "1.5",
+        "default" : "1",
+        "abstract" : "Built-in potential of the source-bulk bottom junction at TNOM. Default = 1.0 in [V].",
+        "notice" : "PBS(T) reset to 0.01 if PBS  makes it less than 0.01 at a given Temp ."
+        },
+"pbd":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "1.00E-05",
+        "upper" : "1.5",
+        "default" : "1",
+        "abstract" : "Built-in potential of the drain-bulk bottom junction at TNOM. Default = PBS in [V].",
+        "notice" : "PBD(T) reset to 0.01 if PBD  makes it less than 0.01 at a given Temp ."
+        },
+"pbsws":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "1.00E-05",
+        "upper" : "1.5",
+        "default" : "1",
+        "abstract" : "Built-in potential of the source-bulk STI sidewall junction at TNOM. Default = 1.0 in [V].",
+        "notice" : "PBSWS(T) reset to 0.01 if PBSWS makes it less than 0.01 at a given Temp ."
+        },
+"pbswd":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "1.00E-05",
+        "upper" : "1.5",
+        "default" : "1",
+        "abstract" : "Built-in potential of the drain-bulk STI sidewall junction at TNOM. Default = PBSWS in [V].",
+        "notice" : "PBSWD(T) reset to 0.01 if PBSWD makes it less than 0.01 at a given Temp ."
+        },
+"pbswgs":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "1.00E-05",
+        "upper" : "1.5",
+        "default" : "1",
+        "abstract" : "Built-in potential of the source-bulk gate-edge junction at TNOM. Default = PBSWS in [V].",
+        "notice" : "PBSWGS(T) reset to 0.01 if PBSWGS makes it less than 0.01 at a given Temp ."
+        },
+"pbswgd":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "1.00E-05",
+        "upper" : "1.5",
+        "default" : "1",
+        "abstract" : "Built-in potential of the drain-bulk gate-edge junction at TNOM. Default = PBSWGS in [V].",
+        "notice" : "PBSWGD(T) reset to 0.01 if PBSWGD makes it less than 0.01 at a given Temp ."
+        },
+"tpb":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "-0.004",
+        "upper" : "0.004",
+        "default" : "0",
+        "abstract" : "Temperature-dependence coefficient for PBS and PBD. Default = 0.0 in [V/K].",
+        "notice" : "PBS(T) reset to 0.01 if TPB makes it less than 0.01 at a given Temp ."
+        },
+"tpbsw":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "-0.004",
+        "upper" : "0.004",
+        "default" : "0",
+        "abstract" : "Temperature-dependence coefficient for PBSWS and PBSWD. Default = 0.0 in [V/K].",
+        "notice" : "PBSWS(T) reset to 0.01 if TPBSW makes it less than 0.01 at a given Temp ."
+        },
+"tpbswg":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "-0.004",
+        "upper" : "0.004",
+        "default" : "0",
+        "abstract" : "Temperature-dependence coefficient for PBSWGS and PBSWGD. Default = 0.0 in [V/K].",
+        "notice" : "PBSWGS(T) reset to 0.01 if TPBSWG makes it less than 0.01 at a given Temp ."
+        },
+"tcj":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "-0.004",
+        "upper" : "0.004",
+        "default" : "0",
+        "abstract" : "Temperature-dependence coefficient for CJS and CJD. Default = 0.0 in [V/K].",
+        "notice" : ""
+        },
+"tcjsw":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "-0.004",
+        "upper" : "0.004",
+        "default" : "0",
+        "abstract" : "Temperature-dependence coefficient for CJSWS and CJSWD. Default = 0.0 in [V/K].",
+        "notice" : ""
+        },
+"tcjswg":
+        {
+        "binable" : "0",
+        "binType" : "0",
+        "lower" : "-0.004",
+        "upper" : "0.004",
+        "default" : "0",
+        "abstract" : "Temperature-dependence coefficient for CJSWGS and CJSWGD. Default = 0.0 in [V/K].",
+        "notice" : ""
+        }
+}
