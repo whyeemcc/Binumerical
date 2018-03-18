@@ -1703,7 +1703,7 @@
         {
         "binable" : "1",
         "binType" : "1",
-        "lower" : "-2.38E-05",
+        "lower" : "-2.38E+05",
         "upper" : "1.43E+05",
         "default" : "3.30E+04",
         "abstract" : "Temperature-dependence parameter for the saturation velocity VSAT. Default = 3.3 ¡Á 10^4 in [m/s] for TEMPMOD = 0 and 3.3 ¡Á 10^4 in [1/Kelvin] for other TEMPMOD  settings (i.e., 1, 2, and 3).",

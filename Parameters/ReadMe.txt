@@ -1,5 +1,5 @@
-﻿注：
-    1. 支持读取包含多颗 Mos 模型的文件。
+注：
+    1. 支持读取包含多颗 Mos 模型的文件。识别 .model xxx n/pmos(Hspice Format)。
 
     2. 遍历所有的 Bsim4 默认参数时，若当前参数在 Model Card 文件中未能找到，则会略过，所以当你的模型文件中缺少某个重要参数时，此软件不会提示。
     
@@ -50,5 +50,10 @@
         
     5. 每个参数的 binType 取决于 Bsim4 Manual 中的定义，已总结至 /参数备份/References/Parameters.xlsx。
     
-
-发现任何 Bug 或错误请联系：whyeemcc@gmail.com
+    6. 所有的输入框都支持四则运算，在计算 corner 参数是否过界时，可直接在已有值的后面添加入偏移量，如“主界面.png”截图所示。
+    
+    7. 四对 W/L 组合成的尺寸边角，会先进行 Weff/Leff 的计算，再以此进行各 bin 参数有效值的计算。
+    
+    8. 饼图各部分为相对应有效值的绝对值之间的比例关系，可表征各 bin 参数是否过量。
+    
+发现任何 Bug 或错误请联系：Grothendieck_Yu@smics.com      
