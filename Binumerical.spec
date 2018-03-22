@@ -3,7 +3,7 @@
 block_cipher = None
 
 
-a = Analysis(['Binumerical.py'],
+a = Analysis(['Main.py'],
              pathex=['D:\\Program Files\\Python\\Python36-32\\Lib\\site-packages\\PyQt5\\Qt\\bin', 'D:\\GitHub\\Binumerical'],
              binaries=[],
              datas=[],

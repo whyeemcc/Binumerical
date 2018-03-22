@@ -34,7 +34,9 @@ Lphysical  = Ldesigned + XL
 Weff = Wphysical - 2 · δW
 Leff  = Lphysical - 2 · δL
 
-u0_binned = u0 + lu0/Leff + wu0/Weff + pu0/(Leff · Weff)
+例如参数 x 的有效值为：
+
+x_binned = x + lx/Leff + wx/Weff + px/(Leff · Weff)
 '''
 
     BinType2 = '''
@@ -56,7 +58,9 @@ Lphysical  = Ldesigned + XL
 Weffjct = Wphysical - 2 · δWjct
 Leff      = Lphysical - 2 · δL
 
-u0_binned = u0 + lu0/Leff + wu0/Weffjct + pu0/(Leff · Weffjct)
+例如参数 x 的有效值为：
+
+x_binned = x + lx/Leff + wx/Weffjct + px/(Leff · Weffjct)
 '''
 
     BinType3 = '''
@@ -78,5 +82,7 @@ Lphysical  = Ldesigned + XL
 Weffcv = Wphysical - 2 · δWcv
 Leffcv  = Lphysical - 2 · δLcv
 
-u0_binned = u0 + lu0/Leffcv + wu0/Weffcv + pu0/(Leffcv · Weffcv)
+例如参数 x 的有效值为：
+
+x_binned = x + lx/Leffcv + wx/Weffcv + px/(Leffcv · Weffcv)
 '''

@@ -43,7 +43,9 @@ u0_binned = u0 + lu0/leff + wu0/weff + pu0/(leff · weff)
 
         Leff = Lphysical - 2 · δL
 
-        u0_binned = u0 + lu0/Leff + wu0/Weff + pu0/(Leff · Weff)
+        例如参数 x 的有效值为：
+
+        x_binned = x + lx/Leff + wx/Weff + px/(Leff · Weff)
 
 
 * BinType2
@@ -62,7 +64,9 @@ u0_binned = u0 + lu0/leff + wu0/weff + pu0/(leff · weff)
 
         Leff = Lphysical - 2 · δL
 
-        u0_binned = u0 + lu0/Leff + wu0/Weffjct + pu0/(Leff · Weffjct)
+        例如参数 x 的有效值为：
+
+        x_binned = x + lx/Leff + wx/Weffjct + px/(Leff · Weffjct)
 
 
 * BinType3
@@ -81,7 +85,9 @@ u0_binned = u0 + lu0/leff + wu0/weff + pu0/(leff · weff)
 
         Leffcv = Lphysical - 2 · δLcv
 
-        u0_binned = u0 + lu0/Leffcv + wu0/Weffcv + pu0/(Leffcv · Weffcv)
+        例如参数 x 的有效值为：
+
+        x_binned = x + lx/Leffcv + wx/Weffcv + px/(Leffcv · Weffcv)
 
 4. Model 文件中的参数数值可以是纯数值，也可是字符串表达式，但在表达式中，数值必须在其他所有字符串的左边：
 

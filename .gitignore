@@ -5,6 +5,10 @@ ehthumbs.db
 # Folder config file
 Desktop.ini
 
+__pycache__
+build
+dist
+Model File
 csvTojson.py
 
 # Recycle Bin used on file shares
